@@ -1,0 +1,643 @@
+Expected:   [(u'@justinbieber', u'USR'), (u'hey', u'UH'), (u'its', u'PRP$'), (u'my', u'PRP$'), (u'birthday', u'NN'), (u'which', u'WDT'), (u'happens', u'VBZ'), (u'1', u'CD'), (u'time', u'NN'), (u'every', u'DT'), (u'year', u'NN'), (u'.', u'.'), (u'wanna', u'VBP'), (u'actually', u'RB'), (u'make', u'VB'), (u'my', u'PRP$'), (u'wish', u'NN'), (u'come', u'VB'), (u'true', u'JJ'), (u'and', u'CC'), (u'follow', u'VB'), (u'me', u'PRP'), (u'TODAY', u'NN'), (u'?', u'.'), (u'(', u'UH'), (u':', u'UH')]
+Candidate:  [(u'@justinbieber', u'USR'), (u'hey', u'UH'), (u'its', u'PRP$'), (u'my', u'PRP$'), (u'birthday', u'NN'), (u'which', u'WDT'), (u'happens', u'VBZ'), (u'1', u'CD'), (u'time', u'NN'), (u'every', u'DT'), (u'year', u'NN'), (u'.', u'.'), (u'wanna', u'UH'), (u'actually', u'RB'), (u'make', u'VB'), (u'my', u'PRP$'), (u'wish', u'NN'), (u'come', u'VB'), (u'true', u'JJ'), (u'and', u'CC'), (u'follow', u'VB'), (u'me', u'PRP'), (u'TODAY', u'NN'), (u'?', u'.'), (u'(', u'UH'), (u':', u'UH')]
+For "wanna", expected  VBP  got  UH
+--------------------
+Expected:   [(u'@Flyboi_Pierre', u'USR'), (u'cool', u'JJ'), (u'as', u'IN'), (u'hell', u'NN'), (u'and', u'CC'), (u'go', u'VB'), (u'crazy', u'JJ'), (u'on', u'IN'), (u'twitter', u'NNP'), (u'u', u'PRP'), (u'may', u'MD'), (u'not', u'RB'), (u'see', u'VB'), (u'him', u'PRP'), (u'out', u'RP'), (u'much', u'RB'), (u'but', u'CC'), (u'at', u'IN'), (u'heart', u'NN'), (u'he', u'PRP'), (u"'s", u'VBZ'), (u'a', u'DT'), (u'real', u'JJ'), (u'partier', u'NN'), (u'#BrightHistMonth', u'HT')]
+Candidate:  [(u'@Flyboi_Pierre', u'USR'), (u'cool', u'JJ'), (u'as', u'IN'), (u'hell', u'NN'), (u'and', u'CC'), (u'go', u'VB'), (u'crazy', u'JJ'), (u'on', u'IN'), (u'twitter', u'NNP'), (u'u', u'PRP'), (u'may', u'MD'), (u'not', u'RB'), (u'see', u'VB'), (u'him', u'PRP'), (u'out', u'RP'), (u'much', u'JJ'), (u'but', u'CC'), (u'at', u'IN'), (u'heart', u'NN'), (u'he', u'PRP'), (u"'s", u'VBZ'), (u'a', u'DT'), (u'real', u'JJ'), (u'partier', u'NN'), (u'#BrightHistMonth', u'HT')]
+For "much", expected  RB  got  JJ
+--------------------
+Expected:   [(u'Pedigree', u'NNP'), (u'Donates', u'VBZ'), (u'Dog', u'NN'), (u'Food', u'NN'), (u'for', u'IN'), (u'Blog', u'NN'), (u'Posts', u'NNS'), (u':', u':'), (u'These', u'DT'), (u'days', u'NNS'), (u',', u','), (u'big', u'JJ'), (u'brands', u'NNS'), (u'usually', u'RB'), (u'look', u'VBP'), (u'to', u'TO'), (u'the', u'DT'), (u'big', u'JJ'), (u'social', u'NN'), (u'networks', u'NNS'), (u'like', u'IN'), (u'Face', u'NNP'), (u'...', u':'), (u'http://bit.ly/bYWzrq', u'URL')]
+Candidate:  [(u'Pedigree', u'NN'), (u'Donates', u'VBZ'), (u'Dog', u'NN'), (u'Food', u'NN'), (u'for', u'IN'), (u'Blog', u'NNP'), (u'Posts', u'VBZ'), (u':', u':'), (u'These', u'DT'), (u'days', u'NNS'), (u',', u','), (u'big', u'JJ'), (u'brands', u'NNS'), (u'usually', u'RB'), (u'look', u'VB'), (u'to', u'TO'), (u'the', u'DT'), (u'big', u'JJ'), (u'social', u'JJ'), (u'networks', u'NNS'), (u'like', u'IN'), (u'Face', u'NN'), (u'...', u':'), (u'http://bit.ly/bYWzrq', u'URL')]
+For "Pedigree", expected  NNP  got  NN
+For "Blog", expected  NN  got  NNP
+For "Posts", expected  NNS  got  VBZ
+For "look", expected  VBP  got  VB
+For "social", expected  NN  got  JJ
+For "Face", expected  NNP  got  NN
+--------------------
+Expected:   [(u'3', u'CD'), (u'tests', u'NNS'), (u'and', u'CC'), (u'an', u'DT'), (u'essay', u'NN'), (u'today', u'NN'), (u'.', u'.'), (u'&gt;', u'UH'), (u'__', u'UH'), (u'&gt;', u'UH'), (u'also', u'RB'), (u'i', u'PRP'), (u'lost', u'VBD'), (u'my', u'PRP$'), (u'backpackkk', u'NN'), (u'c', u'UH'), (u':', u'UH'), (u'but', u'CC'), (u'then', u'RB'), (u'i', u'PRP'), (u'found', u'VBD'), (u'it', u'PRP'), (u'.', u'.')]
+Candidate:  [(u'3', u'CD'), (u'tests', u'NNS'), (u'and', u'CC'), (u'an', u'DT'), (u'essay', u'NN'), (u'today', u'NN'), (u'.', u'.'), (u'&gt;', u'NNP'), (u'__', u'NNP'), (u'&gt;', u'NNP'), (u'also', u'RB'), (u'i', u'PRP'), (u'lost', u'VBD'), (u'my', u'PRP$'), (u'backpackkk', u'NN'), (u'c', u'NN'), (u':', u':'), (u'but', u'CC'), (u'then', u'RB'), (u'i', u'PRP'), (u'found', u'VBD'), (u'it', u'PRP'), (u'.', u'.')]
+For "&gt;", expected  UH  got  NNP
+For "__", expected  UH  got  NNP
+For "&gt;", expected  UH  got  NNP
+For "c", expected  UH  got  NN
+For ":", expected  UH  got  :
+--------------------
+Expected:   [(u'Pick', u'VB'), (u'up', u'RP'), (u'here', u'RB'), (u'.', u'.'), (u'Deliver', u'VB'), (u'on', u'IN'), (u'Dayton', u'NNP'), (u'NJ', u'NNP'), (u'tomorrow', u'NN'), (u'(@', u'IN'), (u'Ball', u'NNP'), (u'Metal', u'NNP'), (u'Container', u'NNP'), (u')', u')')]
+Candidate:  [(u'Pick', u'VB'), (u'up', u'RP'), (u'here', u'RB'), (u'.', u'.'), (u'Deliver', u'VB'), (u'on', u'IN'), (u'Dayton', u'NNP'), (u'NJ', u'NNP'), (u'tomorrow', u'NN'), (u'(@', u'NNP'), (u'Ball', u'NNP'), (u'Metal', u'NNP'), (u'Container', u'NNP'), (u')', u')')]
+For "(@", expected  IN  got  NNP
+--------------------
+Correct:    [(u'@vogueglamGIRL', u'USR'), (u'Ah', u'UH'), (u'I', u'PRP'), (u'know', u'VBP'), (u'!', u'.'), (u'She', u'PRP'), (u'is', u'VBZ'), (u'simply', u'RB'), (u'the', u'DT'), (u'best', u'JJS'), (u'in', u'IN'), (u'The', u'DT'), (u'Sept', u'NNP'), (u'Issue', u'NN'), (u'.', u'.'), (u'My', u'PRP$'), (u'boyfriend', u'NN'), (u"'s", u'POS'), (u'aunt', u'NN'), (u'worked', u'VBD'), (u'for', u'IN'), (u'Anna', u'NNP'), (u'Wintor', u'NNP'), (u'in', u'IN'), (u'NY', u'NNP'), (u'.', u'.')]
+--------------------
+Correct:    [(u'Greek', u'NNP'), (u'Festival', u'NNP'), (u'at', u'IN'), (u'St', u'NNP'), (u'Johns', u'NNP'), (u'before', u'IN'), (u'ASPEN', u'NNP')]
+--------------------
+Expected:   [(u'Lmao', u'UH'), (u'..', u':'), (u'They', u'PRP'), (u'#Hurrt', u'HT'), (u'!', u':'), (u'RT', u'RT'), (u'@_sofucKENNrude', u'USR'), (u'y', u'WRB'), (u'every', u'DT'), (u'nigga', u'NN'), (u'tryna', u'VBG'), (u'grow', u'VB'), (u'they', u'PRP$'), (u'hair', u'NN'), (u'out', u'RP'), (u'.', u'.'), (u'should', u'MD'), (u'of', u'NN'), (u'did', u'VBD'), (u'that', u'DT'), (u'a', u'DT'), (u'long', u'JJ'), (u'time', u'NN'), (u'ago', u'IN'), (u'.', u'.'), (u'-_-', u'UH'), (u'skimp', u'JJ'), (u'ass', u'JJ'), (u'braids', u'NNS'), (u'.', u'.')]
+Candidate:  [(u'Lmao', u'UH'), (u'..', u':'), (u'They', u'PRP'), (u'#Hurrt', u'HT'), (u'!', u'.'), (u'RT', u'RT'), (u'@_sofucKENNrude', u'USR'), (u'y', u'WRB'), (u'every', u'DT'), (u'nigga', u'NN'), (u'tryna', u'NN'), (u'grow', u'VBP'), (u'they', u'PRP'), (u'hair', u'NN'), (u'out', u'IN'), (u'.', u'.'), (u'should', u'MD'), (u'of', u'IN'), (u'did', u'VBD'), (u'that', u'IN'), (u'a', u'DT'), (u'long', u'JJ'), (u'time', u'NN'), (u'ago', u'RB'), (u'.', u'.'), (u'-_-', u'UH'), (u'skimp', u'VB'), (u'ass', u'NN'), (u'braids', u'NNS'), (u'.', u'.')]
+For "!", expected  :  got  .
+For "tryna", expected  VBG  got  NN
+For "grow", expected  VB  got  VBP
+For "they", expected  PRP$  got  PRP
+For "out", expected  RP  got  IN
+For "of", expected  NN  got  IN
+For "that", expected  DT  got  IN
+For "ago", expected  IN  got  RB
+For "skimp", expected  JJ  got  VB
+For "ass", expected  JJ  got  NN
+--------------------
+Expected:   [(u'@CELLY32', u'USR'), (u'I', u'PRP'), (u'went', u'VBD'), (u'to', u'TO'), (u'kolb', u'NNP'), (u'for', u'IN'), (u'a', u'DT'), (u'week', u'NN'), (u'lol', u'UH'), (u'that', u'DT'), (u'shit', u'NN'), (u'was', u'VBD'), (u'trash', u'JJ'), (u'lmao', u'UH')]
+Candidate:  [(u'@CELLY32', u'USR'), (u'I', u'PRP'), (u'went', u'VBD'), (u'to', u'TO'), (u'kolb', u'VB'), (u'for', u'IN'), (u'a', u'DT'), (u'week', u'NN'), (u'lol', u'UH'), (u'that', u'DT'), (u'shit', u'NN'), (u'was', u'VBD'), (u'trash', u'NN'), (u'lmao', u'UH')]
+For "kolb", expected  NNP  got  VB
+For "trash", expected  JJ  got  NN
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@kiera16_x', u'USR'), (u':', u':'), (u'#Twitition', u'HT'), (u'HELP', u'VB'), (u'us', u'PRP'), (u'meet', u'VBP'), (u'Justin', u'NNP'), (u'Bieber', u'NNP'), (u'on', u'IN'), (u'November', u'NNP'), (u'6', u'CD'), (u'(', u'UH'), (u':', u'UH'), (u'THANKYOU', u'UH'), (u'http://twitition.com/oxm5g', u'URL'), (u'@MariaMdn', u'USR')]
+Candidate:  [(u'RT', u'RT'), (u'@kiera16_x', u'USR'), (u':', u':'), (u'#Twitition', u'HT'), (u'HELP', u'VB'), (u'us', u'PRP'), (u'meet', u'VB'), (u'Justin', u'NNP'), (u'Bieber', u'NNP'), (u'on', u'IN'), (u'November', u'NNP'), (u'6', u'CD'), (u'(', u'('), (u':', u':'), (u'THANKYOU', u'UH'), (u'http://twitition.com/oxm5g', u'URL'), (u'@MariaMdn', u'USR')]
+For "meet", expected  VBP  got  VB
+For "(", expected  UH  got  (
+For ":", expected  UH  got  :
+--------------------
+Expected:   [(u'@markschlereth', u'USR'), (u'offensive', u'NN'), (u'player', u'NN'), (u'of', u'IN'), (u'year', u'NN'), (u'so', u'RB'), (u'far', u'RB'), (u',', u','), (u'but', u'CC'), (u'NOT', u'RB'), (u'the', u'DT'), (u'most', u'RBS'), (u'valuable', u'JJ'), (u'player', u'NN'), (u',', u','), (u'when', u'WRB'), (u'he', u'PRP'), (u'was', u'VBD'), (u'hurt', u'VBN'), (u',', u','), (u'they', u'PRP'), (u'were', u'VBD'), (u'still', u'RB'), (u'good', u'JJ')]
+Candidate:  [(u'@markschlereth', u'USR'), (u'offensive', u'JJ'), (u'player', u'NN'), (u'of', u'IN'), (u'year', u'NN'), (u'so', u'RB'), (u'far', u'RB'), (u',', u','), (u'but', u'CC'), (u'NOT', u'RB'), (u'the', u'DT'), (u'most', u'RBS'), (u'valuable', u'JJ'), (u'player', u'NN'), (u',', u','), (u'when', u'WRB'), (u'he', u'PRP'), (u'was', u'VBD'), (u'hurt', u'VBN'), (u',', u','), (u'they', u'PRP'), (u'were', u'VBD'), (u'still', u'RB'), (u'good', u'JJ')]
+For "offensive", expected  NN  got  JJ
+--------------------
+Correct:    [(u'Personal', u'JJ'), (u'Twitter', u'NNP'), (u'is', u'VBZ'), (u'now', u'RB'), (u'ago', u'RB'), (u'.', u'.'), (u'People', u'NNS'), (u'can', u'MD'), (u'now', u'RB'), (u'keep', u'VB'), (u'track', u'NN'), (u'of', u'IN'), (u'me', u'PRP'), (u'instead', u'RB'), (u'of', u'IN'), (u'just', u'RB'), (u'my', u'PRP$'), (u'films', u'NNS'), (u'and', u'CC'), (u'production', u'NN'), (u'company', u'NN'), (u'.', u'.')]
+--------------------
+Expected:   [(u'So', u'IN'), (u'April', u'NNP'), (u'is', u'VBZ'), (u'looking', u'VBG'), (u'like', u'IN'), (u'a', u'DT'), (u'spectacular', u'JJ'), (u'month', u'NN'), (u'for', u'IN'), (u'shows', u'NNS'), (u'.', u'.'), (u'Spring', u'NNP'), (u'Break', u'NNP'), (u'Your', u'NNP'), (u'Heart', u'NNP'), (u'Tour', u'NNP'), (u',', u','), (u'Dirty', u'NNP'), (u'Work', u'NNP'), (u'Tour', u'NNP'), (u',', u','), (u'Gamechangers', u'NNP'), (u'Tour', u'NNP'), (u',', u','), (u'and', u'CC'), (u'now', u'RB'), (u'FYS', u'NNP'), (u'!', u'.'), (u'#yuss', u'HT')]
+Candidate:  [(u'So', u'RB'), (u'April', u'NNP'), (u'is', u'VBZ'), (u'looking', u'VBG'), (u'like', u'IN'), (u'a', u'DT'), (u'spectacular', u'JJ'), (u'month', u'NN'), (u'for', u'IN'), (u'shows', u'NNS'), (u'.', u'.'), (u'Spring', u'NN'), (u'Break', u'VB'), (u'Your', u'PRP$'), (u'Heart', u'NN'), (u'Tour', u'NN'), (u',', u','), (u'Dirty', u'JJ'), (u'Work', u'NN'), (u'Tour', u'NN'), (u',', u','), (u'Gamechangers', u'NNP'), (u'Tour', u'NNP'), (u',', u','), (u'and', u'CC'), (u'now', u'RB'), (u'FYS', u'NNP'), (u'!', u'.'), (u'#yuss', u'HT')]
+For "So", expected  IN  got  RB
+For "Spring", expected  NNP  got  NN
+For "Break", expected  NNP  got  VB
+For "Your", expected  NNP  got  PRP$
+For "Heart", expected  NNP  got  NN
+For "Tour", expected  NNP  got  NN
+For "Dirty", expected  NNP  got  JJ
+For "Work", expected  NNP  got  NN
+For "Tour", expected  NNP  got  NN
+--------------------
+Expected:   [(u'Is', u'VBZ'), (u'thinking', u'VBG'), (u'about', u'IN'), (u'doing', u'VBG'), (u'maybe', u'RB'), (u'an', u'DT'), (u'open', u'NN'), (u'mic', u'NN'), (u'night', u'NN'), (u'stand', u'NN'), (u'up', u'NN'), (u'comedy', u'NN')]
+Candidate:  [(u'Is', u'VBZ'), (u'thinking', u'VBG'), (u'about', u'IN'), (u'doing', u'VBG'), (u'maybe', u'RB'), (u'an', u'DT'), (u'open', u'JJ'), (u'mic', u'NNP'), (u'night', u'NN'), (u'stand', u'VBP'), (u'up', u'RP'), (u'comedy', u'NN')]
+For "open", expected  NN  got  JJ
+For "mic", expected  NN  got  NNP
+For "stand", expected  NN  got  VBP
+For "up", expected  NN  got  RP
+--------------------
+Expected:   [(u'@joejonas', u'USR'), (u'@nickjonas', u'USR'), (u'@kevinjonas', u'USR'), (u'@papajonas', u'USR'), (u'@greggarbo', u'USR'), (u'@johnlloydtaylor', u'USR'), (u'Rock', u'VB'), (u'to', u'TO'), (u'SECTION', u'NN'), (u'204', u'CD'), (u'tonight', u'NN'), (u'!!!!', u'.')]
+Candidate:  [(u'@joejonas', u'USR'), (u'@nickjonas', u'USR'), (u'@kevinjonas', u'USR'), (u'@papajonas', u'USR'), (u'@greggarbo', u'USR'), (u'@johnlloydtaylor', u'USR'), (u'Rock', u'NNP'), (u'to', u'TO'), (u'SECTION', u'NN'), (u'204', u'CD'), (u'tonight', u'NN'), (u'!!!!', u'.')]
+For "Rock", expected  VB  got  NNP
+--------------------
+Expected:   [(u'@lesanto', u'USR'), (u'have', u'VB'), (u'a', u'DT'), (u'look', u'NN'), (u'at', u'IN'), (u'http://facebook.com/media14', u'URL'), (u',', u','), (u'there', u'EX'), (u'are', u'VBP'), (u'postings', u'NNS'), (u'from', u'IN'), (u'TechCrunch', u'NNP'), (u'and', u'CC'), (u'Flowtown', u'NNP'), (u'that', u'DT'), (u'may', u'MD'), (u'help', u'VB'), (u'#mobile', u'HT')]
+Candidate:  [(u'@lesanto', u'USR'), (u'have', u'VBP'), (u'a', u'DT'), (u'look', u'NN'), (u'at', u'IN'), (u'http://facebook.com/media14', u'URL'), (u',', u','), (u'there', u'EX'), (u'are', u'VBP'), (u'postings', u'NNS'), (u'from', u'IN'), (u'TechCrunch', u'NNP'), (u'and', u'CC'), (u'Flowtown', u'NNP'), (u'that', u'WDT'), (u'may', u'MD'), (u'help', u'VB'), (u'#mobile', u'HT')]
+For "have", expected  VB  got  VBP
+For "that", expected  DT  got  WDT
+--------------------
+Expected:   [(u'I', u'PRP'), (u'am', u'VBP'), (u'living', u'VBG'), (u'my', u'PRP$'), (u'dream', u'NN'), (u',', u','), (u'winning', u'VBG'), (u'at', u'IN'), (u'life', u'NN'), (u'and', u'CC'), (u'being', u'VBG'), (u'respected', u'VBN'), (u'for', u'IN'), (u'every', u'DT'), (u'thing', u'NN'), (u'I', u'PRP'), (u'do', u'VBP'), (u'.', u'.'), (u'And', u'CC'), (u'its', u'PRP'), (u'about', u'IN'), (u'fucking', u'RB'), (u'time', u'NN'), (u'.', u'.'), (u'#dontsettle', u'HT'), (u'#EVER', u'HT')]
+Candidate:  [(u'I', u'PRP'), (u'am', u'VBP'), (u'living', u'VBG'), (u'my', u'PRP$'), (u'dream', u'NN'), (u',', u','), (u'winning', u'VBG'), (u'at', u'IN'), (u'life', u'NN'), (u'and', u'CC'), (u'being', u'VBG'), (u'respected', u'VBN'), (u'for', u'IN'), (u'every', u'DT'), (u'thing', u'NN'), (u'I', u'PRP'), (u'do', u'VBP'), (u'.', u'.'), (u'And', u'CC'), (u'its', u'PRP$'), (u'about', u'IN'), (u'fucking', u'VBG'), (u'time', u'NN'), (u'.', u'.'), (u'#dontsettle', u'HT'), (u'#EVER', u'HT')]
+For "its", expected  PRP  got  PRP$
+For "fucking", expected  RB  got  VBG
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@JANKYJ818', u'USR'), (u':', u':'), (u'Shout', u'VB'), (u'out', u'RP'), (u'2', u'TO'), (u'all', u'DT'), (u'the', u'DT'), (u'real', u'JJ'), (u'women', u'NNS'), (u'that', u'WDT'), (u'hold', u'VBP'), (u'they', u'PRP$'), (u'man', u'NN'), (u'down', u'IN'), (u'when', u'WRB'), (u'he', u'PRP'), (u"'s", u'VBZ'), (u'doin', u'VBG'), (u'what', u'WP'), (u'he', u'PRP'), (u'has', u'VBZ'), (u'2', u'TO'), (u'do', u'VB'), (u'2', u'TO'), (u'make', u'VB'), (u'it', u'PRP'), (u'in', u'IN'), (u'this', u'DT'), (u'world', u'NN'), (u'!', u'.'), (u'RESPECT', u'VB'), (u'T', u'NN'), (u'...', u':')]
+Candidate:  [(u'RT', u'RT'), (u'@JANKYJ818', u'USR'), (u':', u':'), (u'Shout', u'VB'), (u'out', u'RP'), (u'2', u'CD'), (u'all', u'PDT'), (u'the', u'DT'), (u'real', u'JJ'), (u'women', u'NNS'), (u'that', u'WDT'), (u'hold', u'VBP'), (u'they', u'PRP'), (u'man', u'NN'), (u'down', u'IN'), (u'when', u'WRB'), (u'he', u'PRP'), (u"'s", u'VBZ'), (u'doin', u'VBG'), (u'what', u'WP'), (u'he', u'PRP'), (u'has', u'VBZ'), (u'2', u'CD'), (u'do', u'VBP'), (u'2', u'TO'), (u'make', u'VB'), (u'it', u'PRP'), (u'in', u'IN'), (u'this', u'DT'), (u'world', u'NN'), (u'!', u'.'), (u'RESPECT', u'VB'), (u'T', u'NNP'), (u'...', u':')]
+For "2", expected  TO  got  CD
+For "all", expected  DT  got  PDT
+For "they", expected  PRP$  got  PRP
+For "2", expected  TO  got  CD
+For "do", expected  VB  got  VBP
+For "T", expected  NN  got  NNP
+--------------------
+Correct:    [(u'I', u'PRP'), (u'like', u'VBP'), (u'@SouljaBoy', u'USR'), (u'songs', u'NNS'), (u'after', u'IN'), (u'a', u'DT'), (u'few', u'JJ'), (u'drinks', u'NNS')]
+--------------------
+Expected:   [(u'ahaha', u'UH'), (u'that', u'DT'), (u'just', u'RB'), (u'made', u'VBD'), (u'my', u'PRP$'), (u'day', u'NN'), (u'xDlmfao', u'UH'), (u'!!!!', u'.')]
+Candidate:  [(u'ahaha', u'UH'), (u'that', u'DT'), (u'just', u'RB'), (u'made', u'VBD'), (u'my', u'PRP$'), (u'day', u'NN'), (u'xDlmfao', u'NNP'), (u'!!!!', u'.')]
+For "xDlmfao", expected  UH  got  NNP
+--------------------
+Expected:   [(u'Dollar', u'NN'), (u'steady', u'RB'), (u'versus', u'CC'), (u'yen', u'NN'), (u'but', u'CC'), (u'market', u'NN'), (u'wary', u'JJ'), (u'of', u'IN'), (u'intervention', u'NN'), (u'|', u':'), (u'Money', u'NN'), (u'...:', u':'), (u'The', u'DT'), (u'dollar', u'NN'), (u'held', u'VBD'), (u'near', u'IN'), (u'its', u'PRP$'), (u'highest', u'JJS'), (u'in', u'IN'), (u'a', u'DT'), (u'month', u'NN'), (u'...', u':'), (u'http://bit.ly/a0F3dO', u'URL')]
+Candidate:  [(u'Dollar', u'NNP'), (u'steady', u'JJ'), (u'versus', u'IN'), (u'yen', u'NN'), (u'but', u'CC'), (u'market', u'NN'), (u'wary', u'JJ'), (u'of', u'IN'), (u'intervention', u'NN'), (u'|', u'SYM'), (u'Money', u'NN'), (u'...:', u':'), (u'The', u'DT'), (u'dollar', u'NN'), (u'held', u'VBD'), (u'near', u'IN'), (u'its', u'PRP$'), (u'highest', u'JJS'), (u'in', u'IN'), (u'a', u'DT'), (u'month', u'NN'), (u'...', u':'), (u'http://bit.ly/a0F3dO', u'URL')]
+For "Dollar", expected  NN  got  NNP
+For "steady", expected  RB  got  JJ
+For "versus", expected  CC  got  IN
+For "|", expected  :  got  SYM
+--------------------
+Expected:   [(u'Costa', u'JJ'), (u'Rican', u'JJ'), (u'group', u'NN'), (u'CocoFunka', u'NNP'), (u'power', u'VBP'), (u'this', u'DT'), (u'week', u'NN'), (u"'s", u'POS'), (u'Indiesent', u'NNP'), (u'Exposure', u'NNP'), (u'http://ht.ly/2G4nS', u'URL'), (u'by', u'IN'), (u'@fuseboxradio', u'USR'), (u'on', u'IN'), (u'@planetill', u'USR')]
+Candidate:  [(u'Costa', u'JJ'), (u'Rican', u'JJ'), (u'group', u'NN'), (u'CocoFunka', u'NNP'), (u'power', u'NN'), (u'this', u'DT'), (u'week', u'NN'), (u"'s", u'POS'), (u'Indiesent', u'NNP'), (u'Exposure', u'NNP'), (u'http://ht.ly/2G4nS', u'URL'), (u'by', u'IN'), (u'@fuseboxradio', u'USR'), (u'on', u'IN'), (u'@planetill', u'USR')]
+For "power", expected  VBP  got  NN
+--------------------
+Expected:   [(u'@OrionCards', u'USR'), (u'there', u'EX'), (u'will', u'MD'), (u'be', u'VB'), (u',', u','), (u'just', u'RB'), (u'need', u'VBP'), (u'to', u'TO'), (u'sort', u'VB'), (u'it', u'PRP'), (u'out', u'RP'), (u'really', u'RB'), (u'!', u'.'), (u'already', u'RB'), (u'got', u'VBD'), (u'my', u'PRP$'), (u'place', u'NN'), (u'for', u'IN'), (u'2nd', u'CD'), (u'year', u'NN')]
+Candidate:  [(u'@OrionCards', u'USR'), (u'there', u'RB'), (u'will', u'MD'), (u'be', u'VB'), (u',', u','), (u'just', u'RB'), (u'need', u'VBP'), (u'to', u'TO'), (u'sort', u'VB'), (u'it', u'PRP'), (u'out', u'RP'), (u'really', u'RB'), (u'!', u'.'), (u'already', u'RB'), (u'got', u'VBD'), (u'my', u'PRP$'), (u'place', u'NN'), (u'for', u'IN'), (u'2nd', u'CD'), (u'year', u'NN')]
+For "there", expected  EX  got  RB
+--------------------
+Expected:   [(u'St', u'NNP'), (u'Louis', u'NNP'), (u':', u':'), (u'APR', u'NNP'), (u'Chocolate', u'NNP'), (u'Toy', u'NNP'), (u'Poodle', u'NNP'), (u'Pups', u'NNP'), (u'-', u':'), (u'$300', u'CD'), (u'(', u'('), (u'Liberty', u'NNP'), (u')', u')'), (u'http://bit.ly/bHftHD', u'URL'), (u'#eBC', u'HT'), (u'#Pets', u'HT')]
+Candidate:  [(u'St', u'NNP'), (u'Louis', u'NNP'), (u':', u':'), (u'APR', u'NNP'), (u'Chocolate', u'NNP'), (u'Toy', u'NNP'), (u'Poodle', u'NNP'), (u'Pups', u'NNP'), (u'-', u':'), (u'$300', u'NNP'), (u'(', u'('), (u'Liberty', u'NNP'), (u')', u')'), (u'http://bit.ly/bHftHD', u'URL'), (u'#eBC', u'HT'), (u'#Pets', u'HT')]
+For "$300", expected  CD  got  NNP
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@robmoysey', u'USR'), (u'Eyeopener', u'NNP'), (u'vs', u'CC'), (u'.', u'.'), (u'Ryerson', u'NNP'), (u'Quidditch', u'NN'), (u'team', u'NN'), (u'this', u'DT'), (u'Sunday', u'NNP'), (u'at', u'IN'), (u'4', u'CD'), (u'p.m.', u'NN'), (u'Anyone', u'NN'), (u'know', u'VB'), (u'where', u'WRB'), (u'to', u'TO'), (u'get', u'VB'), (u'cheap', u'JJ'), (u'brooms', u'NNS'), (u'?', u'.'), (u'#Ryerson', u'HT'), (u'@RUQuidditch', u'USR'), (u'#Rams', u'HT')]
+Candidate:  [(u'RT', u'RT'), (u'@robmoysey', u'USR'), (u'Eyeopener', u'NNP'), (u'vs', u'IN'), (u'.', u'.'), (u'Ryerson', u'NNP'), (u'Quidditch', u'NNP'), (u'team', u'NN'), (u'this', u'DT'), (u'Sunday', u'NNP'), (u'at', u'IN'), (u'4', u'CD'), (u'p.m.', u'NN'), (u'Anyone', u'NN'), (u'know', u'VB'), (u'where', u'WRB'), (u'to', u'TO'), (u'get', u'VB'), (u'cheap', u'JJ'), (u'brooms', u'NNS'), (u'?', u'.'), (u'#Ryerson', u'HT'), (u'@RUQuidditch', u'USR'), (u'#Rams', u'HT')]
+For "vs", expected  CC  got  IN
+For "Quidditch", expected  NN  got  NNP
+--------------------
+Expected:   [(u'Antick', u'NNP'), (u'Musings', u'NNP'), (u'post', u'NN'), (u':', u':'), (u'Reviewing', u'VBG'), (u'the', u'DT'), (u'Mail', u'NN'), (u':', u':'), (u'Week', u'NN'), (u'of', u'IN'), (u'10/2', u'CD'), (u'http://bit.ly/9PIm5E', u'URL')]
+Candidate:  [(u'Antick', u'NNP'), (u'Musings', u'NNPS'), (u'post', u'NN'), (u':', u':'), (u'Reviewing', u'VBG'), (u'the', u'DT'), (u'Mail', u'NN'), (u':', u':'), (u'Week', u'NN'), (u'of', u'IN'), (u'10/2', u'CD'), (u'http://bit.ly/9PIm5E', u'URL')]
+For "Musings", expected  NNP  got  NNPS
+--------------------
+Expected:   [(u'I', u'PRP'), (u"'m", u'VBP'), (u'at', u'IN'), (u'Winn-Dixie', u'NNP'), (u'(', u'('), (u'948', u'CD'), (u'SW', u'NNP'), (u'67th', u'NNP'), (u'Ave', u'NNP'), (u',', u','), (u'SW', u'NNP'), (u'8th', u'NNP'), (u'St', u'NNP'), (u'.,', u'IN'), (u'Miami', u'NNP'), (u')', u')'), (u'http://4sq.com/eA4NFI', u'URL')]
+Candidate:  [(u'I', u'PRP'), (u"'m", u'VBP'), (u'at', u'IN'), (u'Winn-Dixie', u'NNP'), (u'(', u'('), (u'948', u'CD'), (u'SW', u'NNP'), (u'67th', u'NNP'), (u'Ave', u'NNP'), (u',', u','), (u'SW', u'NNP'), (u'8th', u'JJ'), (u'St', u'NNP'), (u'.,', u"''"), (u'Miami', u'NNP'), (u')', u')'), (u'http://4sq.com/eA4NFI', u'URL')]
+For "8th", expected  NNP  got  JJ
+For ".,", expected  IN  got  ''
+--------------------
+Expected:   [(u'@BexsterBexster', u'USR'), (u'@shinobi32768', u'USR'), (u'I', u'PRP'), (u"'ve", u'VBP'), (u'been', u'VBN'), (u'having', u'VBG'), (u'soup', u'NN'), (u'all', u'DT'), (u'week', u'NN'), (u',', u','), (u'do', u'VBP'), (u"n't", u'RB'), (u'really', u'RB'), (u'have', u'VB'), (u'a', u'DT'), (u'favourite', u'NN'), (u'.', u'.'), (u'It', u'PRP'), (u"'s", u'VBZ'), (u'starting', u'VBG'), (u'to', u'TO'), (u'taste', u'VB'), (u'pretty', u'RB'), (u'much', u'RB'), (u'the', u'DT'), (u'same', u'JJ'), (u'.', u'.')]
+Candidate:  [(u'@BexsterBexster', u'USR'), (u'@shinobi32768', u'USR'), (u'I', u'PRP'), (u"'ve", u'VBP'), (u'been', u'VBN'), (u'having', u'VBG'), (u'soup', u'NN'), (u'all', u'DT'), (u'week', u'NN'), (u',', u','), (u'do', u'VBP'), (u"n't", u'RB'), (u'really', u'RB'), (u'have', u'VB'), (u'a', u'DT'), (u'favourite', u'NN'), (u'.', u'.'), (u'It', u'PRP'), (u"'s", u'VBZ'), (u'starting', u'VBG'), (u'to', u'TO'), (u'taste', u'VB'), (u'pretty', u'RB'), (u'much', u'JJ'), (u'the', u'DT'), (u'same', u'JJ'), (u'.', u'.')]
+For "much", expected  RB  got  JJ
+--------------------
+Expected:   [(u'@Jezkwon', u'USR'), (u'@kpop_stuff', u'USR'), (u'Tweet', u'VB'), (u'me', u'PRP'), (u'a', u'DT'), (u'member', u'NN'), (u'for', u'IN'), (u'picspam', u'NNP'), (u'.', u'.'), (u'Will', u'MD'), (u'do', u'VB'), (u'them', u'PRP'), (u'tomorrow', u'NN'), (u'morning', u'NN'), (u'.', u'.'), (u'(', u'UH'), (u':', u'UH')]
+Candidate:  [(u'@Jezkwon', u'USR'), (u'@kpop_stuff', u'USR'), (u'Tweet', u'VB'), (u'me', u'PRP'), (u'a', u'DT'), (u'member', u'NN'), (u'for', u'IN'), (u'picspam', u'NN'), (u'.', u'.'), (u'Will', u'MD'), (u'do', u'VB'), (u'them', u'PRP'), (u'tomorrow', u'NN'), (u'morning', u'NN'), (u'.', u'.'), (u'(', u'('), (u':', u'UH')]
+For "picspam", expected  NNP  got  NN
+For "(", expected  UH  got  (
+--------------------
+Expected:   [(u':)', u'UH'), (u'RT', u'RT'), (u'@ashtondoyle', u'USR'), (u':', u':'), (u'I', u'PRP'), (u'am', u'VBP'), (u'a', u'DT'), (u'total', u'JJ'), (u'dork', u'NN'), (u'.', u'.'), (u'But', u'CC'), (u'having', u'VBG'), (u'Flipboard', u'VBD'), (u'up', u'IN'), (u'on', u'IN'), (u'my', u'PRP$'), (u'desk', u'NN'), (u'all', u'DT'), (u'day', u'NN'), (u'makes', u'VBZ'), (u'me', u'PRP'), (u'happy', u'JJ'), (u'.', u'.'), (u'http://plixi.com/p/57934009', u'URL')]
+Candidate:  [(u':)', u'UH'), (u'RT', u'RT'), (u'@ashtondoyle', u'USR'), (u':', u':'), (u'I', u'PRP'), (u'am', u'VBP'), (u'a', u'DT'), (u'total', u'JJ'), (u'dork', u'NN'), (u'.', u'.'), (u'But', u'CC'), (u'having', u'VBG'), (u'Flipboard', u'NN'), (u'up', u'RP'), (u'on', u'IN'), (u'my', u'PRP$'), (u'desk', u'NN'), (u'all', u'DT'), (u'day', u'NN'), (u'makes', u'VBZ'), (u'me', u'PRP'), (u'happy', u'JJ'), (u'.', u'.'), (u'http://plixi.com/p/57934009', u'URL')]
+For "Flipboard", expected  VBD  got  NN
+For "up", expected  IN  got  RP
+--------------------
+Correct:    [(u'@elbirth', u'USR'), (u'haha', u'UH'), (u',', u','), (u'I', u'PRP'), (u'want', u'VBP'), (u'to', u'TO'), (u'load', u'VB'), (u'up', u'RP'), (u'on', u'IN'), (u'that', u'DT'), (u'before', u'IN'), (u'work', u'NN'), (u'one', u'CD'), (u'day', u'NN')]
+--------------------
+Expected:   [(u'@Infamous__Kid', u'USR'), (u'lol', u'UH'), (u'you', u'PRP'), (u'always', u'RB'), (u'got', u'VB'), (u'problems', u'NNS'), (u'with', u'IN'), (u'ur', u'PRP$'), (u'hair', u'NN'), (u'you', u'PRP'), (u'said', u'VBD'), (u'somethin', u'NN'), (u'last', u'JJ'), (u'time', u'NN'), (u'like', u'IN'), (u'they', u'PRP'), (u'didnt', u'VBD'), (u'cut', u'VB'), (u'it', u'PRP'), (u'right', u'RB'), (u'ha', u'UH')]
+Candidate:  [(u'@Infamous__Kid', u'USR'), (u'lol', u'UH'), (u'you', u'PRP'), (u'always', u'RB'), (u'got', u'VBD'), (u'problems', u'NNS'), (u'with', u'IN'), (u'ur', u'JJ'), (u'hair', u'NN'), (u'you', u'PRP'), (u'said', u'VBD'), (u'somethin', u'NN'), (u'last', u'JJ'), (u'time', u'NN'), (u'like', u'IN'), (u'they', u'PRP'), (u'didnt', u'VBD'), (u'cut', u'VB'), (u'it', u'PRP'), (u'right', u'RB'), (u'ha', u'UH')]
+For "got", expected  VB  got  VBD
+For "ur", expected  PRP$  got  JJ
+--------------------
+Expected:   [(u'#Astros', u'HT'), (u'lineup', u'NN'), (u'for', u'IN'), (u'tonight', u'NN'), (u'.', u'.'), (u'Keppinger', u'NNP'), (u'sits', u'VBZ'), (u',', u','), (u'Downs', u'NNP'), (u'plays', u'VBZ'), (u'2B', u'NN'), (u',', u','), (u'CJ', u'NNP'), (u'bats', u'VBZ'), (u'5th', u'JJ'), (u'.', u'.'), (u'@alysonfooter', u'USR'), (u'http://bit.ly/bHvgCS', u'URL')]
+Candidate:  [(u'#Astros', u'HT'), (u'lineup', u'NN'), (u'for', u'IN'), (u'tonight', u'NN'), (u'.', u'.'), (u'Keppinger', u'NNP'), (u'sits', u'VBZ'), (u',', u','), (u'Downs', u'NNP'), (u'plays', u'VBZ'), (u'2B', u'NNP'), (u',', u','), (u'CJ', u'NNP'), (u'bats', u'NNS'), (u'5th', u'JJ'), (u'.', u'.'), (u'@alysonfooter', u'USR'), (u'http://bit.ly/bHvgCS', u'URL')]
+For "2B", expected  NN  got  NNP
+For "bats", expected  VBZ  got  NNS
+--------------------
+Expected:   [(u'Gotta', u'VBP'), (u'call', u'VB'), (u'mom', u'NN'), (u'2', u'TO'), (u'let', u'VB'), (u'her', u'PRP'), (u'know', u'VBP'), (u'it', u'PRP'), (u"'s", u'VBZ'), (u'almost', u'RB'), (u'3', u'CD'), (u'.', u'.'), (u'Yli', u'NNP'), (u'gets', u'VBZ'), (u'out', u'RP'), (u'in', u'IN'), (u'15', u'CD'), (u'.', u'.'), (u'Mom', u'NN'), (u'took', u'VBD'), (u'the', u'DT'), (u'antenna', u'NN'), (u'home', u'NN'), (u'today', u'NN'), (u'&', u'CC'), (u'connected', u'VBD'), (u'it', u'PRP'), (u'at', u'IN'), (u'home', u'NN'), (u',', u','), (u'finally', u'RB'), (u'.', u'.')]
+Candidate:  [(u'Gotta', u'NNP'), (u'call', u'VB'), (u'mom', u'NN'), (u'2', u'CD'), (u'let', u'VB'), (u'her', u'PRP'), (u'know', u'VBP'), (u'it', u'PRP'), (u"'s", u'VBZ'), (u'almost', u'RB'), (u'3', u'CD'), (u'.', u'.'), (u'Yli', u'NNP'), (u'gets', u'VBZ'), (u'out', u'RP'), (u'in', u'IN'), (u'15', u'CD'), (u'.', u'.'), (u'Mom', u'NN'), (u'took', u'VBD'), (u'the', u'DT'), (u'antenna', u'NN'), (u'home', u'NN'), (u'today', u'NN'), (u'&', u'CC'), (u'connected', u'VBN'), (u'it', u'PRP'), (u'at', u'IN'), (u'home', u'NN'), (u',', u','), (u'finally', u'RB'), (u'.', u'.')]
+For "Gotta", expected  VBP  got  NNP
+For "2", expected  TO  got  CD
+For "connected", expected  VBD  got  VBN
+--------------------
+Expected:   [(u'looking', u'VBG'), (u'forward', u'RB'), (u'to', u'TO'), (u'a', u'DT'), (u'weekend', u'NN'), (u'resting', u'VBG'), (u'foot', u'NN'), (u'!!', u'.'), (u'oh', u'UH'), (u'and', u'CC'), (u'the', u'DT'), (u'irish', u'NNP'), (u'on', u'IN'), (u'sunday', u'NNP'), (u'.', u'.')]
+Candidate:  [(u'looking', u'VBG'), (u'forward', u'RB'), (u'to', u'TO'), (u'a', u'DT'), (u'weekend', u'NN'), (u'resting', u'VBG'), (u'foot', u'NN'), (u'!!', u'.'), (u'oh', u'UH'), (u'and', u'CC'), (u'the', u'DT'), (u'irish', u'JJ'), (u'on', u'IN'), (u'sunday', u'NNP'), (u'.', u'.')]
+For "irish", expected  NNP  got  JJ
+--------------------
+Correct:    [(u'@JaeChartaye', u'USR'), (u'I', u'PRP'), (u'got', u'VBD'), (u'u', u'PRP'), (u'next', u'JJ'), (u'week', u'NN')]
+--------------------
+Correct:    [(u'I', u'PRP'), (u'may', u'MD'), (u'have', u'VB'), (u'been', u'VBN'), (u'wrong', u'JJ'), (u'about', u'IN'), (u'Murkowski', u'NNP'), (u',', u','), (u'look', u'VB'), (u'like', u'IN'), (u'she', u'PRP'), (u"'s", u'VBZ'), (u'going', u'VBG'), (u'to', u'TO'), (u'turn', u'VB'), (u'Friday', u'NNP'), (u'news', u'NN'), (u'dump', u'NN'), (u'on', u'IN'), (u'its', u'PRP$'), (u'head', u'NN'), (u'.', u'.'), (u'three-way', u'JJ'), (u'race', u'NN'), (u'reportedly', u'RB'), (u'ahead', u'RB'), (u'in', u'IN'), (u'AK', u'NNP'), (u'.', u'.')]
+--------------------
+Expected:   [(u'@taylorrhicks', u'USR'), (u'Thunder', u'NN'), (u',', u','), (u'lightening', u'NN'), (u',', u','), (u'first', u'JJ'), (u'rain', u'NN'), (u'we', u'PRP'), (u"'ve", u'VBP'), (u'had', u'VBN'), (u'in', u'IN'), (u'months', u'NNS'), (u'...', u':'), (u'love', u'VBP'), (u'it', u'PRP'), (u'!', u'.'), (u'Chukchansi', u'NNP'), (u'had', u'VBD'), (u'a', u'DT'), (u'pow', u'NN'), (u'wow', u'NN'), (u'this', u'DT'), (u'weekend', u'NN'), (u'.', u'.'), (u'Think', u'VBP'), (u'someone', u'NN'), (u'did', u'VBD'), (u'a', u'DT'), (u'...', u':')]
+Candidate:  [(u'@taylorrhicks', u'USR'), (u'Thunder', u'NN'), (u',', u','), (u'lightening', u'VBG'), (u',', u','), (u'first', u'JJ'), (u'rain', u'NN'), (u'we', u'PRP'), (u"'ve", u'VBP'), (u'had', u'VBN'), (u'in', u'IN'), (u'months', u'NNS'), (u'...', u':'), (u'love', u'VBP'), (u'it', u'PRP'), (u'!', u'.'), (u'Chukchansi', u'NNP'), (u'had', u'VBD'), (u'a', u'DT'), (u'pow', u'NNP'), (u'wow', u'UH'), (u'this', u'DT'), (u'weekend', u'NN'), (u'.', u'.'), (u'Think', u'VBP'), (u'someone', u'NN'), (u'did', u'VBD'), (u'a', u'DT'), (u'...', u':')]
+For "lightening", expected  NN  got  VBG
+For "pow", expected  NN  got  NNP
+For "wow", expected  NN  got  UH
+--------------------
+Expected:   [(u'I', u'PRP'), (u"'m", u'VBP'), (u'stressed', u'VBN'), (u'at', u'IN'), (u'9am', u'CD'), (u',', u','), (u'shopping', u'VBG'), (u'on', u'IN'), (u'my', u'PRP$'), (u'lunch', u'NN'), (u'break', u'NN'), (u'.....', u':'), (u'i', u'PRP'), (u'ca', u'MD'), (u"n't", u'RB'), (u'deal', u'VB'), (u'w/', u'IN'), (u'this', u'DT'), (u'shit', u'NN'), (u'today', u'NN'), (u'.', u'.'), (u'#retailtherapy', u'HT')]
+Candidate:  [(u'I', u'PRP'), (u"'m", u'VBP'), (u'stressed', u'VBN'), (u'at', u'IN'), (u'9am', u'CD'), (u',', u','), (u'shopping', u'NN'), (u'on', u'IN'), (u'my', u'PRP$'), (u'lunch', u'NN'), (u'break', u'NN'), (u'.....', u':'), (u'i', u'PRP'), (u'ca', u'MD'), (u"n't", u'RB'), (u'deal', u'VB'), (u'w/', u'IN'), (u'this', u'DT'), (u'shit', u'NN'), (u'today', u'NN'), (u'.', u'.'), (u'#retailtherapy', u'HT')]
+For "shopping", expected  VBG  got  NN
+--------------------
+Expected:   [(u'HA', u'UH'), (u'!', u':'), (u'RT', u'RT'), (u'@ew32766', u'USR'), (u'I', u'PRP'), (u'love', u'VBP'), (u'it', u'PRP'), (u'when', u'WRB'), (u'my', u'PRP$'), (u'mom', u'NN'), (u'posts', u'VBZ'), (u'status', u'NN'), (u'updates', u'NNS'), (u'on', u'IN'), (u'FB', u'NNP'), (u',', u','), (u'they', u'PRP'), (u'are', u'VBP'), (u'usually', u'RB'), (u'personal', u'JJ'), (u'messages', u'NNS'), (u'she', u'PRP'), (u'meant', u'VBD'), (u'2write', u'VB'), (u'on', u'IN'), (u'someone', u'NN'), (u"'s", u'POS'), (u'wall', u'NN'), (u'.', u'.'), (u';)', u'UH')]
+Candidate:  [(u'HA', u'UH'), (u'!', u'.'), (u'RT', u'RT'), (u'@ew32766', u'USR'), (u'I', u'PRP'), (u'love', u'VBP'), (u'it', u'PRP'), (u'when', u'WRB'), (u'my', u'PRP$'), (u'mom', u'NN'), (u'posts', u'NNS'), (u'status', u'NN'), (u'updates', u'NNS'), (u'on', u'IN'), (u'FB', u'NNP'), (u',', u','), (u'they', u'PRP'), (u'are', u'VBP'), (u'usually', u'RB'), (u'personal', u'JJ'), (u'messages', u'NNS'), (u'she', u'PRP'), (u'meant', u'VBD'), (u'2write', u'CD'), (u'on', u'IN'), (u'someone', u'NN'), (u"'s", u'POS'), (u'wall', u'NN'), (u'.', u'.'), (u';)', u'UH')]
+For "!", expected  :  got  .
+For "posts", expected  VBZ  got  NNS
+For "2write", expected  VB  got  CD
+--------------------
+Correct:    [(u'@BieberEgypt', u'USR'), (u'I', u'PRP'), (u"'ve", u'VBP'), (u'got', u'VBN'), (u'some', u'DT'), (u'bad', u'JJ'), (u'news', u'NN'), (u',', u','), (u'Yeah', u'UH'), (u'I', u'PRP'), (u'cant', u'MD'), (u'come', u'VB'), (u'to', u'TO'), (u'the', u'DT'), (u'meeting', u'NN'), (u'tomorrow', u'NN'), (u'.', u'.'), (u':', u':'), (u'S', u'NNP')]
+--------------------
+Expected:   [(u'@', u'IN'), (u'home', u'URL'), (u'chilling', u'VBG'), (u'guess', u'VBP'), (u'I', u'PRP'), (u"'m", u'VBP'), (u'staying', u'VBG'), (u'in', u'RP'), (u'2day', u'NN'), (u'2', u'TO'), (u'rest', u'VB'), (u'this', u'DT'), (u'week', u'NN'), (u'was', u'VBD'), (u'crazy', u'JJ'), (u'but', u'CC'), (u'I', u'PRP'), (u"'m", u'VBP'), (u'ready', u'JJ'), (u'for', u'IN'), (u'dis', u'DT'), (u'weekend', u'NN')]
+Candidate:  [(u'@', u'USR'), (u'home', u'NN'), (u'chilling', u'VBG'), (u'guess', u'VBP'), (u'I', u'PRP'), (u"'m", u'VBP'), (u'staying', u'VBG'), (u'in', u'IN'), (u'2day', u'NN'), (u'2', u'CD'), (u'rest', u'NN'), (u'this', u'DT'), (u'week', u'NN'), (u'was', u'VBD'), (u'crazy', u'JJ'), (u'but', u'CC'), (u'I', u'PRP'), (u"'m", u'VBP'), (u'ready', u'JJ'), (u'for', u'IN'), (u'dis', u'DT'), (u'weekend', u'NN')]
+For "@", expected  IN  got  USR
+For "home", expected  URL  got  NN
+For "in", expected  RP  got  IN
+For "2", expected  TO  got  CD
+For "rest", expected  VB  got  NN
+--------------------
+Correct:    [(u':(', u'UH'), (u'RT', u'RT'), (u'@themaine', u'USR'), (u'Who', u'WP'), (u'is', u'VBZ'), (u'coming', u'VBG'), (u'to', u'TO'), (u'the', u'DT'), (u'show', u'NN'), (u'tomorrow', u'NN'), (u'in', u'IN'), (u'Hawaii', u'NNP'), (u'?', u'.')]
+--------------------
+Expected:   [(u'@biancalilly', u'USR'), (u'ahaha', u'UH'), (u'!', u'.'), (u'Omg', u'UH'), (u'Bianca', u'NNP'), (u',', u','), (u'that', u'DT'), (u'made', u'VBD'), (u'my', u'PRP$'), (u'day', u'NN'), (u'!', u'.')]
+Candidate:  [(u'@biancalilly', u'USR'), (u'ahaha', u'UH'), (u'!', u'.'), (u'Omg', u'UH'), (u'Bianca', u'NNP'), (u',', u','), (u'that', u'WDT'), (u'made', u'VBD'), (u'my', u'PRP$'), (u'day', u'NN'), (u'!', u'.')]
+For "that", expected  DT  got  WDT
+--------------------
+Expected:   [(u'Consumer', u'NNP'), (u'Electronics', u'NNP'), (u'Show', u'NNP'), (u':', u':'), (u'Attendees', u'NNS'), (u'take', u'VBP'), (u'to', u'TO'), (u'Twitter', u'NNP'), (u'on', u'IN'), (u'opening', u'NN'), (u'day', u'NN'), (u':', u':'), (u'If', u'IN'), (u'we', u'PRP'), (u'listened', u'VBD'), (u'to', u'TO'), (u'attendees', u'NNS'), (u'at', u'IN'), (u'the', u'DT'), (u'Consumer', u'NNP'), (u'...', u':'), (u'http://bit.ly/gy6Oqe', u'URL')]
+Candidate:  [(u'Consumer', u'NNP'), (u'Electronics', u'NNP'), (u'Show', u'NNP'), (u':', u':'), (u'Attendees', u'NNS'), (u'take', u'VBP'), (u'to', u'TO'), (u'Twitter', u'NNP'), (u'on', u'IN'), (u'opening', u'VBG'), (u'day', u'NN'), (u':', u':'), (u'If', u'IN'), (u'we', u'PRP'), (u'listened', u'VBD'), (u'to', u'TO'), (u'attendees', u'NNS'), (u'at', u'IN'), (u'the', u'DT'), (u'Consumer', u'NN'), (u'...', u':'), (u'http://bit.ly/gy6Oqe', u'URL')]
+For "opening", expected  NN  got  VBG
+For "Consumer", expected  NNP  got  NN
+--------------------
+Expected:   [(u'Before', u'RB'), (u'I', u'PRP'), (u'proceed', u'VBP'), (u'into', u'IN'), (u'the', u'DT'), (u'paradise', u'NN'), (u',', u','), (u'let', u'VB'), (u"'s", u'PRP'), (u'not', u'RB'), (u'forget', u'VB'), (u'the', u'DT'), (u'Princess', u'NNP'), (u'Lover', u'NNP'), (u'OVA', u'NNP'), (u'1', u'CD'), (u'teaser', u'NN'), (u'pic', u'NN'), (u',', u','), (u'SFW', u'NNP'), (u'http://yfrog.com/0fg2kfj', u'URL')]
+Candidate:  [(u'Before', u'IN'), (u'I', u'PRP'), (u'proceed', u'VB'), (u'into', u'IN'), (u'the', u'DT'), (u'paradise', u'NN'), (u',', u','), (u'let', u'VB'), (u"'s", u'PRP'), (u'not', u'RB'), (u'forget', u'VB'), (u'the', u'DT'), (u'Princess', u'NNP'), (u'Lover', u'NNP'), (u'OVA', u'NNP'), (u'1', u'CD'), (u'teaser', u'NN'), (u'pic', u'NN'), (u',', u','), (u'SFW', u'NN'), (u'http://yfrog.com/0fg2kfj', u'URL')]
+For "Before", expected  RB  got  IN
+For "proceed", expected  VBP  got  VB
+For "SFW", expected  NNP  got  NN
+--------------------
+Expected:   [(u'Sleep', u'VB'), (u'.', u'.'), (u'Tomorrow', u'NN'), (u'is', u'VBZ'), (u'Friday', u'NNP'), (u'which', u'WDT'), (u'is', u'VBZ'), (u'good', u'JJ'), (u',', u','), (u'but', u'CC'), (u'then', u'IN'), (u'Saturday', u'NNP'), (u',', u','), (u'I', u'PRP'), (u'have', u'VBP'), (u'work', u'NN'), (u'.', u'.'), (u'Ugh', u'UH'), (u'.', u'.'), (u'I', u'PRP'), (u'have', u'VBP'), (u'basically', u'RB'), (u'no', u'DT'), (u'break', u'NN'), (u'because', u'IN'), (u'I', u'PRP'), (u'am', u'VBP'), (u'doing', u'VBG'), (u'homework', u'NN'), (u'sunday', u'NN'), (u'.', u'.')]
+Candidate:  [(u'Sleep', u'NN'), (u'.', u'.'), (u'Tomorrow', u'NN'), (u'is', u'VBZ'), (u'Friday', u'NNP'), (u'which', u'WDT'), (u'is', u'VBZ'), (u'good', u'JJ'), (u',', u','), (u'but', u'CC'), (u'then', u'RB'), (u'Saturday', u'NNP'), (u',', u','), (u'I', u'PRP'), (u'have', u'VBP'), (u'work', u'NN'), (u'.', u'.'), (u'Ugh', u'UH'), (u'.', u'.'), (u'I', u'PRP'), (u'have', u'VBP'), (u'basically', u'RB'), (u'no', u'DT'), (u'break', u'NN'), (u'because', u'IN'), (u'I', u'PRP'), (u'am', u'VBP'), (u'doing', u'VBG'), (u'homework', u'NN'), (u'sunday', u'NN'), (u'.', u'.')]
+For "Sleep", expected  VB  got  NN
+For "then", expected  IN  got  RB
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@thefutoncritic', u'USR'), (u':', u':'), (u'Exclusive', u'NN'), (u':', u':'), (u'FOX', u'NNP'), (u'to', u'TO'), (u'give', u'VB'), (u'"', u"''"), (u'The', u'NNP'), (u'Good', u'NNP'), (u'Guys', u'NNP'), (u'"', u"''"), (u'Saturday', u'NNP'), (u'late-night', u'JJ'), (u'slot', u'NN'), (u';', u':'), (u'"', u"''"), (u'Running', u'NNP'), (u'Wilde', u'NNP'), (u'"', u"''"), (u'one-hour', u'JJ'), (u'winter', u'NN'), (u'finale', u'NN'), (u'December', u'NNP'), (u'28', u'CD'), (u'...', u':')]
+Candidate:  [(u'RT', u'RT'), (u'@thefutoncritic', u'USR'), (u':', u':'), (u'Exclusive', u'JJ'), (u':', u':'), (u'FOX', u'NNP'), (u'to', u'TO'), (u'give', u'VB'), (u'"', u"''"), (u'The', u'DT'), (u'Good', u'JJ'), (u'Guys', u'NNS'), (u'"', u"''"), (u'Saturday', u'NNP'), (u'late-night', u'JJ'), (u'slot', u'NN'), (u';', u':'), (u'"', u"''"), (u'Running', u'VBG'), (u'Wilde', u'NNP'), (u'"', u"''"), (u'one-hour', u'JJ'), (u'winter', u'NN'), (u'finale', u'NN'), (u'December', u'NNP'), (u'28', u'CD'), (u'...', u':')]
+For "Exclusive", expected  NN  got  JJ
+For "The", expected  NNP  got  DT
+For "Good", expected  NNP  got  JJ
+For "Guys", expected  NNP  got  NNS
+For "Running", expected  NNP  got  VBG
+--------------------
+Correct:    [(u'I', u'PRP'), (u'like', u'VBP'), (u'when', u'WRB'), (u'it', u'PRP'), (u'rains', u'VBZ'), (u'.', u'.')]
+--------------------
+Expected:   [(u'@YoDayDay', u'USR'), (u'Nope', u'UH'), (u'!', u'.'), (u'*lil', u'JJ'), (u'kid', u'NN'), (u'voice*', u'NN'), (u'im', u'PRP'), (u'being', u'VBG'), (u'stingy', u'JJ'), (u'tonight', u'RB'), (u'!!', u'.'), (u'*hmph*', u'UH')]
+Candidate:  [(u'@YoDayDay', u'USR'), (u'Nope', u'UH'), (u'!', u'.'), (u'*lil', u'VB'), (u'kid', u'NN'), (u'voice*', u'NN'), (u'im', u'PRP'), (u'being', u'VBG'), (u'stingy', u'JJ'), (u'tonight', u'NN'), (u'!!', u'.'), (u'*hmph*', u'UH')]
+For "*lil", expected  JJ  got  VB
+For "tonight", expected  RB  got  NN
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@MiracoleBurns', u'USR'), (u':', u':'), (u'Tonight', u'NN'), (u'(', u'('), (u'2/7', u'CD'), (u')', u')'), (u'is', u'VBZ'), (u'Drink', u'NNP'), (u'__AND__', u'CC'), (u'Draw', u'NNP'), (u'@', u'IN'), (u'the', u'DT'), (u'Mellow', u'NNP'), (u'Mushroom', u'NNP'), (u'in', u'IN'), (u'Decatur', u'NNP'), (u'@8pm', u'CD'), (u'.', u'.'), (u'It', u'PRP'), (u"'s", u'VBZ'), (u'our', u'PRP$'), (u'first', u'JJ'), (u'time', u'NN'), (u'back', u'RB'), (u'in', u'IN'), (u'3', u'CD'), (u'months', u'NNS'), (u'!', u'.'), (u'Come', u'VB'), (u'out', u'RP'), (u',', u'.'), (u'...', u':')]
+Candidate:  [(u'RT', u'RT'), (u'@MiracoleBurns', u'USR'), (u':', u':'), (u'Tonight', u'NN'), (u'(', u'('), (u'2/7', u'CD'), (u')', u')'), (u'is', u'VBZ'), (u'Drink', u'VB'), (u'__AND__', u'NNP'), (u'Draw', u'VB'), (u'@', u'USR'), (u'the', u'DT'), (u'Mellow', u'JJ'), (u'Mushroom', u'NN'), (u'in', u'IN'), (u'Decatur', u'NNP'), (u'@8pm', u'USR'), (u'.', u'.'), (u'It', u'PRP'), (u"'s", u'VBZ'), (u'our', u'PRP$'), (u'first', u'JJ'), (u'time', u'NN'), (u'back', u'RB'), (u'in', u'IN'), (u'3', u'CD'), (u'months', u'NNS'), (u'!', u'.'), (u'Come', u'VB'), (u'out', u'RP'), (u',', u','), (u'...', u':')]
+For "Drink", expected  NNP  got  VB
+For "__AND__", expected  CC  got  NNP
+For "Draw", expected  NNP  got  VB
+For "@", expected  IN  got  USR
+For "Mellow", expected  NNP  got  JJ
+For "Mushroom", expected  NNP  got  NN
+For "@8pm", expected  CD  got  USR
+For ",", expected  .  got  ,
+--------------------
+Expected:   [(u'Do', u'VBP'), (u'you', u'PRP'), (u'want', u'VBP'), (u'to', u'TO'), (u'learn', u'VB'), (u'how', u'WRB'), (u'to', u'TO'), (u'get', u'VB'), (u'rooms', u'NNS'), (u'at', u'IN'), (u'the', u'DT'), (u'Marriott', u'NNP'), (u'for', u'IN'), (u'$35', u'CD'), (u'a', u'DT'), (u'night', u'NN'), (u',', u','), (u'all', u'DT'), (u'year', u'NN'), (u'long', u'JJ'), (u'?', u'.'), (u'Check', u'VB'), (u'this', u'DT'), (u'out', u'RP'), (u'!', u'.'), (u'------', u'SYM'), (u'&gt;', u'SYM'), (u'http://bit.ly/cL9IwC', u'URL')]
+Candidate:  [(u'Do', u'VBP'), (u'you', u'PRP'), (u'want', u'VBP'), (u'to', u'TO'), (u'learn', u'VB'), (u'how', u'WRB'), (u'to', u'TO'), (u'get', u'VB'), (u'rooms', u'NNS'), (u'at', u'IN'), (u'the', u'DT'), (u'Marriott', u'NN'), (u'for', u'IN'), (u'$35', u'CD'), (u'a', u'DT'), (u'night', u'NN'), (u',', u','), (u'all', u'DT'), (u'year', u'NN'), (u'long', u'RB'), (u'?', u'.'), (u'Check', u'VB'), (u'this', u'DT'), (u'out', u'RP'), (u'!', u'.'), (u'------', u'UH'), (u'&gt;', u'UH'), (u'http://bit.ly/cL9IwC', u'URL')]
+For "Marriott", expected  NNP  got  NN
+For "long", expected  JJ  got  RB
+For "------", expected  SYM  got  UH
+For "&gt;", expected  SYM  got  UH
+--------------------
+Expected:   [(u'@brittanyyy_imk', u'USR'), (u'aww', u'UH'), (u'yeah', u'UH'), (u',', u','), (u'its', u'PRP'), (u'gonna', u'VBG'), (u'be', u'VB'), (u'one', u'CD'), (u'to', u'TO'), (u'remember', u'VB'), (u',', u'.'), (u'cause', u'IN'), (u'the', u'DT'), (u'next', u'JJ'), (u'day', u'NN'), (u',', u','), (u'my', u'PRP$'), (u'sis', u'NN'), (u'is', u'VBZ'), (u'getting', u'VBG'), (u'married', u'VBN'), (u'&lt;', u'UH'), (u'3', u'UH'), (u'yours', u'PRP$'), (u'is', u'VBZ'), (u'marked', u'VBN'), (u'special', u'NN'), (u'occassion', u'NN')]
+Candidate:  [(u'@brittanyyy_imk', u'USR'), (u'aww', u'UH'), (u'yeah', u'UH'), (u',', u','), (u'its', u'PRP$'), (u'gonna', u'VBG'), (u'be', u'VB'), (u'one', u'CD'), (u'to', u'TO'), (u'remember', u'VB'), (u',', u','), (u'cause', u'IN'), (u'the', u'DT'), (u'next', u'JJ'), (u'day', u'NN'), (u',', u','), (u'my', u'PRP$'), (u'sis', u'NN'), (u'is', u'VBZ'), (u'getting', u'VBG'), (u'married', u'VBN'), (u'&lt;', u'IN'), (u'3', u'CD'), (u'yours', u'PRP'), (u'is', u'VBZ'), (u'marked', u'JJ'), (u'special', u'JJ'), (u'occassion', u'NN')]
+For "its", expected  PRP  got  PRP$
+For ",", expected  .  got  ,
+For "&lt;", expected  UH  got  IN
+For "3", expected  UH  got  CD
+For "yours", expected  PRP$  got  PRP
+For "marked", expected  VBN  got  JJ
+For "special", expected  NN  got  JJ
+--------------------
+Expected:   [(u'@justinbieber', u'USR'), (u'I', u'PRP'), (u'could', u'MD'), (u'sing', u'VB'), (u'with', u'IN'), (u'you', u'PRP'), (u'what', u'WP'), (u'I`ll', u'PRP'), (u'do', u'VB'), (u'o', u'DT'), (u'show', u'NN'), (u'in', u'IN'), (u'november', u'NNP'), (u'in', u'IN'), (u'my', u'PRP$'), (u'city', u'NN'), (u'oh', u'UH'), (u'my', u'PRP$'), (u'dream', u'NN'), (u'and', u'CC'), (u'sing', u'VB'), (u'one', u'CD'), (u'time', u'NN')]
+Candidate:  [(u'@justinbieber', u'USR'), (u'I', u'PRP'), (u'could', u'MD'), (u'sing', u'VB'), (u'with', u'IN'), (u'you', u'PRP'), (u'what', u'WP'), (u'I`ll', u'NNP'), (u'do', u'VBP'), (u'o', u'IN'), (u'show', u'NN'), (u'in', u'IN'), (u'november', u'NNP'), (u'in', u'IN'), (u'my', u'PRP$'), (u'city', u'NNP'), (u'oh', u'UH'), (u'my', u'PRP$'), (u'dream', u'NN'), (u'and', u'CC'), (u'sing', u'VB'), (u'one', u'CD'), (u'time', u'NN')]
+For "I`ll", expected  PRP  got  NNP
+For "do", expected  VB  got  VBP
+For "o", expected  DT  got  IN
+For "city", expected  NN  got  NNP
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@monsterrkev', u'USR'), (u':', u':'), (u'No', u'DT'), (u'more', u'RBR'), (u'Pink', u'JJ'), (u'Friday', u'NNP'), (u'barbiez', u'NNS'), (u'!!', u'.'), (u'monsters', u'NNS'), (u'are', u'VBP'), (u'taking', u'VBG'), (u'over', u'IN'), (u'.', u'.'), (u'Welcome', u'VB'), (u'BORNTHISWAYFRIDAY', u'NNP')]
+Candidate:  [(u'RT', u'RT'), (u'@monsterrkev', u'USR'), (u':', u':'), (u'No', u'DT'), (u'more', u'JJR'), (u'Pink', u'JJ'), (u'Friday', u'NNP'), (u'barbiez', u'NN'), (u'!!', u'.'), (u'monsters', u'NNS'), (u'are', u'VBP'), (u'taking', u'VBG'), (u'over', u'RP'), (u'.', u'.'), (u'Welcome', u'VB'), (u'BORNTHISWAYFRIDAY', u'NNP')]
+For "more", expected  RBR  got  JJR
+For "barbiez", expected  NNS  got  NN
+For "over", expected  IN  got  RP
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@Mickey__Rourke', u'USR'), (u':', u':'), (u'58', u'CD'), (u'years', u'NNS'), (u'ago', u'IN'), (u'today', u'NN'), (u'I', u'PRP'), (u'tumbled', u'VBD'), (u'from', u'IN'), (u'my', u'PRP$'), (u'mother', u'NN'), (u"'s", u'POS'), (u'womb', u'NN'), (u'with', u'IN'), (u'a', u'DT'), (u'cigarette', u'NN'), (u'in', u'IN'), (u'my', u'PRP$'), (u'mouth', u'NN'), (u'and', u'CC'), (u'a', u'DT'), (u'chihuahua', u'NN'), (u'puppy', u'NN'), (u'under', u'IN'), (u'each', u'DT'), (u'arm', u'NN'), (u'...', u':')]
+Candidate:  [(u'RT', u'RT'), (u'@Mickey__Rourke', u'USR'), (u':', u':'), (u'58', u'CD'), (u'years', u'NNS'), (u'ago', u'IN'), (u'today', u'NN'), (u'I', u'PRP'), (u'tumbled', u'VBD'), (u'from', u'IN'), (u'my', u'PRP$'), (u'mother', u'NN'), (u"'s", u'POS'), (u'womb', u'NN'), (u'with', u'IN'), (u'a', u'DT'), (u'cigarette', u'NN'), (u'in', u'IN'), (u'my', u'PRP$'), (u'mouth', u'NN'), (u'and', u'CC'), (u'a', u'DT'), (u'chihuahua', u'NNP'), (u'puppy', u'NN'), (u'under', u'IN'), (u'each', u'DT'), (u'arm', u'NN'), (u'...', u':')]
+For "chihuahua", expected  NN  got  NNP
+--------------------
+Expected:   [(u'@msloaf', u'USR'), (u'Though', u'IN'), (u'I', u'PRP'), (u'do', u'VBP'), (u'agree', u'VB'), (u'that', u'IN'), (u'it', u'PRP'), (u'is', u'VBZ'), (u'offensive', u'JJ'), (u'and', u'CC'), (u'would', u'MD'), (u'be', u'VB'), (u'difficult', u'JJ'), (u'to', u'TO'), (u'explain', u'VB'), (u'.', u'.'), (u'When', u'WRB'), (u'this', u'DT'), (u'stuff', u'NN'), (u'happens', u'VBZ'), (u'to', u'TO'), (u'me', u'PRP'), (u'I', u'PRP'), (u'want', u'VBP'), (u'to', u'TO'), (u'yell', u'VB'), (u',', u','), (u'"', u"''"), (u'URDUMB', u'UH'), (u'!"', u"''")]
+Candidate:  [(u'@msloaf', u'USR'), (u'Though', u'IN'), (u'I', u'PRP'), (u'do', u'VBP'), (u'agree', u'VB'), (u'that', u'IN'), (u'it', u'PRP'), (u'is', u'VBZ'), (u'offensive', u'JJ'), (u'and', u'CC'), (u'would', u'MD'), (u'be', u'VB'), (u'difficult', u'JJ'), (u'to', u'TO'), (u'explain', u'VB'), (u'.', u'.'), (u'When', u'WRB'), (u'this', u'DT'), (u'stuff', u'NN'), (u'happens', u'VBZ'), (u'to', u'TO'), (u'me', u'PRP'), (u'I', u'PRP'), (u'want', u'VBP'), (u'to', u'TO'), (u'yell', u'VB'), (u',', u','), (u'"', u"''"), (u'URDUMB', u'NNP'), (u'!"', u'NNP')]
+For "URDUMB", expected  UH  got  NNP
+For "!"", expected  ''  got  NNP
+--------------------
+Expected:   [(u'Still', u'RB'), (u'smh', u'UH'), (u'@', u'IN'), (u'last', u'JJ'), (u'night', u'NN'), (u'.', u'.'), (u'Dointhemost', u'URL'), (u'.', u'URL'), (u'com', u'URL')]
+Candidate:  [(u'Still', u'RB'), (u'smh', u'VBD'), (u'@', u'USR'), (u'last', u'JJ'), (u'night', u'NN'), (u'.', u'.'), (u'Dointhemost', u'NNP'), (u'.', u'.'), (u'com', u'NN')]
+For "smh", expected  UH  got  VBD
+For "@", expected  IN  got  USR
+For "Dointhemost", expected  URL  got  NNP
+For ".", expected  URL  got  .
+For "com", expected  URL  got  NN
+--------------------
+Correct:    [(u'@lauraluanabeth', u'USR'), (u"'ll", u'MD'), (u'be', u'VB'), (u'back', u'RB'), (u'in', u'IN'), (u'LA', u'NNP'), (u'tomorrow', u'NN'), (u'night', u'NN'), (u'!', u'.'), (u'yaaaay', u'UH'), (u'!', u'.')]
+--------------------
+Expected:   [(u'@IAMtheCOMMODORE', u'USR'), (u'Today', u'NN'), (u'is', u'VBZ'), (u'my', u'PRP$'), (u'20th', u'JJ'), (u'birthday', u'NN'), (u'and', u'CC'), (u'it', u'PRP'), (u'would', u'MD'), (u'mean', u'VB'), (u'the', u'DT'), (u'world', u'NN'), (u'to', u'TO'), (u'me', u'PRP'), (u'if', u'IN'), (u'I', u'PRP'), (u'got', u'VBD'), (u'an', u'DT'), (u'@reply', u'NN'), (u'from', u'IN'), (u'you', u'PRP'), (u'today', u'NN'), (u'!', u'.'), (u'&lt;', u'UH'), (u'3', u'UH')]
+Candidate:  [(u'@IAMtheCOMMODORE', u'USR'), (u'Today', u'NN'), (u'is', u'VBZ'), (u'my', u'PRP$'), (u'20th', u'JJ'), (u'birthday', u'NN'), (u'and', u'CC'), (u'it', u'PRP'), (u'would', u'MD'), (u'mean', u'VB'), (u'the', u'DT'), (u'world', u'NN'), (u'to', u'TO'), (u'me', u'PRP'), (u'if', u'IN'), (u'I', u'PRP'), (u'got', u'VBD'), (u'an', u'DT'), (u'@reply', u'USR'), (u'from', u'IN'), (u'you', u'PRP'), (u'today', u'NN'), (u'!', u'.'), (u'&lt;', u'VB'), (u'3', u'CD')]
+For "@reply", expected  NN  got  USR
+For "&lt;", expected  UH  got  VB
+For "3", expected  UH  got  CD
+--------------------
+Expected:   [(u'LMFAO', u'UH'), (u':D', u'UH'), (u'RT', u'RT'), (u'@PeezySqueezy', u'USR'), (u':', u':'), (u'Stop', u'VB'), (u'tweeting', u'VBG'), (u'about', u'IN'), (u'jersey', u'NNP'), (u'shore', u'NNP'), (u',', u','), (u'we', u'PRP'), (u'know', u'VBP'), (u'its', u'PRP'), (u'tonight', u'NN'), (u',', u','), (u'but', u'CC'), (u'its', u'PRP'), (u'just', u'RB'), (u'another', u'DT'), (u'that', u'WDT'), (u'shows', u'VBZ'), (u'of', u'IN'), (u'a', u'DT'), (u'life', u'NN'), (u"'ll", u'MD'), (u'never', u'RB'), (u'...', u':')]
+Candidate:  [(u'LMFAO', u'UH'), (u':D', u'UH'), (u'RT', u'RT'), (u'@PeezySqueezy', u'USR'), (u':', u':'), (u'Stop', u'VB'), (u'tweeting', u'VBG'), (u'about', u'IN'), (u'jersey', u'NNP'), (u'shore', u'NN'), (u',', u','), (u'we', u'PRP'), (u'know', u'VBP'), (u'its', u'PRP$'), (u'tonight', u'NN'), (u',', u','), (u'but', u'CC'), (u'its', u'PRP$'), (u'just', u'RB'), (u'another', u'DT'), (u'that', u'WDT'), (u'shows', u'VBZ'), (u'of', u'IN'), (u'a', u'DT'), (u'life', u'NN'), (u"'ll", u'MD'), (u'never', u'RB'), (u'...', u':')]
+For "shore", expected  NNP  got  NN
+For "its", expected  PRP  got  PRP$
+For "its", expected  PRP  got  PRP$
+--------------------
+Correct:    [(u'i', u'PRP'), (u'think', u'VBP'), (u'it', u'PRP'), (u"'s", u'VBZ'), (u'better', u'JJR'), (u'to', u'TO'), (u'go', u'VB'), (u'to', u'TO'), (u'bed', u'NN'), (u'after', u'IN'), (u'this', u'DT'), (u'bad', u'JJ'), (u'day', u'NN'), (u'...', u':')]
+--------------------
+Expected:   [(u'@Starmaker73', u'USR'), (u'ya', u'UH'), (u'but', u'CC'), (u'it', u'PRP'), (u'would', u'MD'), (u'have', u'VB'), (u'to', u'TO'), (u'go', u'VB'), (u'down', u'IN'), (u'Saturday', u'NNP'), (u'morning', u'NN'), (u'and', u'CC'), (u'tht', u'WDT'), (u'would', u'MD'), (u'ntake', u'VB'), (u'all', u'DT'), (u'day', u'NN'), (u'lol', u'UH'), (u'so', u'UH'), (u'id', u'PRP'), (u'be', u'VB'), (u'cutting', u'VBG'), (u'it', u'PRP'), (u'close', u'JJ'), (u'lol', u'UH')]
+Candidate:  [(u'@Starmaker73', u'USR'), (u'ya', u'PRP$'), (u'but', u'CC'), (u'it', u'PRP'), (u'would', u'MD'), (u'have', u'VB'), (u'to', u'TO'), (u'go', u'VB'), (u'down', u'RB'), (u'Saturday', u'NNP'), (u'morning', u'NN'), (u'and', u'CC'), (u'tht', u'DT'), (u'would', u'MD'), (u'ntake', u'VB'), (u'all', u'DT'), (u'day', u'NN'), (u'lol', u'UH'), (u'so', u'RB'), (u'id', u'PRP'), (u'be', u'VB'), (u'cutting', u'VBG'), (u'it', u'PRP'), (u'close', u'JJ'), (u'lol', u'UH')]
+For "ya", expected  UH  got  PRP$
+For "down", expected  IN  got  RB
+For "tht", expected  WDT  got  DT
+For "so", expected  UH  got  RB
+--------------------
+Expected:   [(u'EventsandHolidays', u'NNS'), (u'with', u'IN'), (u'"', u"''"), (u'cute', u'JJ'), (u'easter', u'NNP'), (u'egg', u'NN'), (u'color', u'NN'), (u'shower', u'NN'), (u'Easter', u'NNP'), (u'cards', u'NNPS'), (u'",', u'NNP'), (u'Zazzle', u'NNP'), (u"'s", u'POS'), (u'Best', u'JJS'), (u'Today', u'NN'), (u'.', u'.'), (u'http://bit.ly/ebZzGT', u'URL')]
+Candidate:  [(u'EventsandHolidays', u'NNS'), (u'with', u'IN'), (u'"', u"''"), (u'cute', u'JJ'), (u'easter', u'NN'), (u'egg', u'NN'), (u'color', u'NN'), (u'shower', u'NN'), (u'Easter', u'NNP'), (u'cards', u'NNS'), (u'",', u':'), (u'Zazzle', u'NNP'), (u"'s", u'POS'), (u'Best', u'JJS'), (u'Today', u'NN'), (u'.', u'.'), (u'http://bit.ly/ebZzGT', u'URL')]
+For "easter", expected  NNP  got  NN
+For "cards", expected  NNPS  got  NNS
+For "",", expected  NNP  got  :
+--------------------
+Expected:   [(u'you', u'PRP'), (u'reach', u'VBP'), (u'your', u'PRP$'), (u'hand', u'NN'), (u'in', u'IN'), (u'fire', u'NN'), (u'...', u':'), (u'you', u'PRP'), (u'pull', u'VBP'), (u'it', u'PRP'), (u'back', u'RB'), (u'when', u'WRB'), (u'you', u'PRP'), (u'get', u'VBP'), (u'hurt', u'JJ'), (u'...', u':')]
+Candidate:  [(u'you', u'PRP'), (u'reach', u'VBP'), (u'your', u'PRP$'), (u'hand', u'NN'), (u'in', u'IN'), (u'fire', u'NN'), (u'...', u':'), (u'you', u'PRP'), (u'pull', u'VBP'), (u'it', u'PRP'), (u'back', u'RB'), (u'when', u'WRB'), (u'you', u'PRP'), (u'get', u'VBP'), (u'hurt', u'VBN'), (u'...', u':')]
+For "hurt", expected  JJ  got  VBN
+--------------------
+Expected:   [(u'it', u'PRP'), (u'was', u'VBD'), (u'half', u'NN'), (u'past', u'JJ'), (u'8', u'CD'), (u'when', u'WRB'), (u'the', u'DT'), (u'drugs', u'NNS'), (u'began', u'VBD'), (u'to', u'TO'), (u'take', u'VB'), (u'hold', u'NN'), (u'....', u':')]
+Candidate:  [(u'it', u'PRP'), (u'was', u'VBD'), (u'half', u'JJ'), (u'past', u'JJ'), (u'8', u'CD'), (u'when', u'WRB'), (u'the', u'DT'), (u'drugs', u'NNS'), (u'began', u'VBD'), (u'to', u'TO'), (u'take', u'VB'), (u'hold', u'VB'), (u'....', u':')]
+For "half", expected  NN  got  JJ
+For "hold", expected  NN  got  VB
+--------------------
+Expected:   [(u'I', u'PRP'), (u'am', u'VBP'), (u'in', u'IN'), (u'such', u'JJ'), (u'a', u'DT'), (u'good', u'JJ'), (u'mood', u'NN'), (u',', u','), (u'i', u'PRP'), (u'should', u'MD'), (u'probably', u'RB'), (u'do', u'VBP'), (u'my', u'PRP$'), (u'math', u'NN'), (u'before', u'IN'), (u'my', u'PRP$'), (u'mood', u'NN'), (u'changes', u'VBZ'), (u'and', u'CC'), (u'i', u'PRP'), (u'dont', u'VBP'), (u'want', u'VB'), (u'to', u'TO'), (u'later', u'RB'), (u'...', u':'), (u'lol', u'UH')]
+Candidate:  [(u'I', u'PRP'), (u'am', u'VBP'), (u'in', u'IN'), (u'such', u'JJ'), (u'a', u'DT'), (u'good', u'JJ'), (u'mood', u'NN'), (u',', u','), (u'i', u'PRP'), (u'should', u'MD'), (u'probably', u'RB'), (u'do', u'VBP'), (u'my', u'PRP$'), (u'math', u'NN'), (u'before', u'IN'), (u'my', u'PRP$'), (u'mood', u'NN'), (u'changes', u'NNS'), (u'and', u'CC'), (u'i', u'PRP'), (u'dont', u'VBP'), (u'want', u'VB'), (u'to', u'TO'), (u'later', u'RB'), (u'...', u':'), (u'lol', u'UH')]
+For "changes", expected  VBZ  got  NNS
+--------------------
+Correct:    [(u'Hey', u'UH'), (u'....', u':'), (u'my', u'PRP$'), (u'birthday', u'NN'), (u'is', u'VBZ'), (u'in', u'IN'), (u'exactly', u'RB'), (u'one', u'CD'), (u'month', u'NN'), (u'!!!', u'.'), (u':D', u'UH')]
+--------------------
+Expected:   [(u'@snufflesgirl25', u'USR'), (u'@mo9x', u'USR'), (u'Well', u'UH'), (u'.', u'.'), (u'just', u'RB'), (u'beg', u'VB'), (u'@100monkeysmusic', u'USR'), (u'..', u':'), (u'PLEASE', u'VB'), (u'come', u'VB'), (u'to', u'TO'), (u'the', u'DT'), (u'#SBLeurope', u'HT'), (u'Next', u'JJ'), (u'year', u'NN'), (u'!.', u':'), (u'We', u'PRP'), (u'need', u'VBP'), (u'you', u'PRP'), (u'there', u'RB'), (u'!', u'.'), (u'*puss', u'NN'), (u'in', u'IN'), (u'boots', u'NNS'), (u'eyes*', u'NNS')]
+Candidate:  [(u'@snufflesgirl25', u'USR'), (u'@mo9x', u'USR'), (u'Well', u'UH'), (u'.', u'.'), (u'just', u'RB'), (u'beg', u'VBD'), (u'@100monkeysmusic', u'USR'), (u'..', u':'), (u'PLEASE', u'VB'), (u'come', u'VB'), (u'to', u'TO'), (u'the', u'DT'), (u'#SBLeurope', u'HT'), (u'Next', u'JJ'), (u'year', u'NN'), (u'!.', u'.'), (u'We', u'PRP'), (u'need', u'VBP'), (u'you', u'PRP'), (u'there', u'RB'), (u'!', u'.'), (u'*puss', u'NNS'), (u'in', u'IN'), (u'boots', u'NNS'), (u'eyes*', u'NN')]
+For "beg", expected  VB  got  VBD
+For "!.", expected  :  got  .
+For "*puss", expected  NN  got  NNS
+For "eyes*", expected  NNS  got  NN
+--------------------
+Correct:    [(u'@christinamarks_', u'USR'), (u'u', u'PRP'), (u'try', u'VBP'), (u'to', u'TO'), (u'be', u'VB'), (u'like', u'IN'), (u'April', u'NNP'), (u'on', u'IN'), (u'youtube', u'NNP')]
+--------------------
+Expected:   [(u'Kfc', u'NNP'), (u'!', u'.'), (u'my', u'PRP$'), (u'mom', u'NN'), (u'wuz', u'VBD'), (u'pushy', u'JJ'), (u'in', u'IN'), (u'there', u'RB'), (u',', u','), (u'damn', u'UH'), (u'~December*18th~', u'NNP')]
+Candidate:  [(u'Kfc', u'NNP'), (u'!', u'.'), (u'my', u'PRP$'), (u'mom', u'NN'), (u'wuz', u'VBZ'), (u'pushy', u'JJ'), (u'in', u'IN'), (u'there', u'RB'), (u',', u','), (u'damn', u'UH'), (u'~December*18th~', u'UH')]
+For "wuz", expected  VBD  got  VBZ
+For "~December*18th~", expected  NNP  got  UH
+--------------------
+Expected:   [(u'The', u'DT'), (u'inevitability', u'NN'), (u'of', u'IN'), (u'ambivalence', u'NN'), (u'--', u':'), (u'on', u'IN'), (u'my', u'PRP$'), (u'blog', u'NN'), (u',', u','), (u'After', u'NNP'), (u'Psychotherapy', u'NNP'), (u'.', u'.'), (u'http://tiny.ly/isQV', u'URL')]
+Candidate:  [(u'The', u'DT'), (u'inevitability', u'NN'), (u'of', u'IN'), (u'ambivalence', u'NN'), (u'--', u':'), (u'on', u'IN'), (u'my', u'PRP$'), (u'blog', u'NN'), (u',', u','), (u'After', u'IN'), (u'Psychotherapy', u'NNP'), (u'.', u'.'), (u'http://tiny.ly/isQV', u'URL')]
+For "After", expected  NNP  got  IN
+--------------------
+Expected:   [(u'CIty', u'NN'), (u'Sponsors', u'VBZ'), (u'Drug', u'NN'), (u'Toss', u'NN'), (u'To', u'TO'), (u'Dispose', u'VB'), (u'Of', u'IN'), (u'Expired', u'JJ'), (u'Medications', u'NNS'), (u':', u':'), (u'Louisville', u'NNP'), (u'and', u'CC'), (u'several', u'JJ'), (u'partners', u'NNS'), (u'are', u'VBP'), (u'offering', u'VBG'), (u'three', u'CD'), (u'days', u'NNS'), (u'...', u':'), (u'http://bit.ly/bbUSMP', u'URL')]
+Candidate:  [(u'CIty', u'NNP'), (u'Sponsors', u'NNP'), (u'Drug', u'NNP'), (u'Toss', u'NNP'), (u'To', u'TO'), (u'Dispose', u'VB'), (u'Of', u'IN'), (u'Expired', u'VBN'), (u'Medications', u'NNS'), (u':', u':'), (u'Louisville', u'NNP'), (u'and', u'CC'), (u'several', u'JJ'), (u'partners', u'NNS'), (u'are', u'VBP'), (u'offering', u'VBG'), (u'three', u'CD'), (u'days', u'NNS'), (u'...', u':'), (u'http://bit.ly/bbUSMP', u'URL')]
+For "CIty", expected  NN  got  NNP
+For "Sponsors", expected  VBZ  got  NNP
+For "Drug", expected  NN  got  NNP
+For "Toss", expected  NN  got  NNP
+For "Expired", expected  JJ  got  VBN
+--------------------
+Expected:   [(u'Today', u'NN'), (u'I', u'NNP'), (u'justt', u'RB'), (u'felt', u'VBD'), (u'special', u'JJ'), (u'forr', u'IN'), (u'no', u'DT'), (u'reason', u'NN'), (u'&lt;', u'UH'), (u'3', u'UH'), (u'.', u'.'), (u'It', u'PRP'), (u'wass', u'VBD'), (u'cool', u'JJ'), (u'thou(', u'RB'), (u':', u':')]
+Candidate:  [(u'Today', u'NN'), (u'I', u'PRP'), (u'justt', u'RB'), (u'felt', u'VBD'), (u'special', u'JJ'), (u'forr', u'IN'), (u'no', u'DT'), (u'reason', u'NN'), (u'&lt;', u'VBD'), (u'3', u'CD'), (u'.', u'.'), (u'It', u'PRP'), (u'wass', u'VBZ'), (u'cool', u'JJ'), (u'thou(', u'NN'), (u':', u':')]
+For "I", expected  NNP  got  PRP
+For "&lt;", expected  UH  got  VBD
+For "3", expected  UH  got  CD
+For "wass", expected  VBD  got  VBZ
+For "thou(", expected  RB  got  NN
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@ChrystallK', u'USR'), (u':', u':'), (u'Yo', u'UH'), (u',', u','), (u'artists', u'NNS'), (u'!', u'.'), (u'ASU', u'NNP'), (u'Step', u'NNP'), (u'Gallery', u'NNP'), (u'wants', u'VBZ'), (u'your', u'PRP$'), (u'"', u"''"), (u'socially', u'RB'), (u'relevant', u'JJ'), (u'"', u"''"), (u'comic', u'NN'), (u'book', u'NN'), (u'cover', u'NN'), (u'designs', u'NNS'), (u'for', u'IN'), (u'a', u'DT'), (u'Nov', u'NNP'), (u'.', u'.'), (u'show', u'NN'), (u'http://bit.ly/8YLSw4', u'URL')]
+Candidate:  [(u'RT', u'RT'), (u'@ChrystallK', u'USR'), (u':', u':'), (u'Yo', u'UH'), (u',', u','), (u'artists', u'NNS'), (u'!', u'.'), (u'ASU', u'NNP'), (u'Step', u'NN'), (u'Gallery', u'NN'), (u'wants', u'VBZ'), (u'your', u'PRP$'), (u'"', u"''"), (u'socially', u'RB'), (u'relevant', u'JJ'), (u'"', u"''"), (u'comic', u'JJ'), (u'book', u'NN'), (u'cover', u'NN'), (u'designs', u'NNS'), (u'for', u'IN'), (u'a', u'DT'), (u'Nov', u'NNP'), (u'.', u'.'), (u'show', u'NN'), (u'http://bit.ly/8YLSw4', u'URL')]
+For "Step", expected  NNP  got  NN
+For "Gallery", expected  NNP  got  NN
+For "comic", expected  NN  got  JJ
+--------------------
+Expected:   [(u'NHL', u'NNP'), (u'Betting', u'VBG'), (u'Picks', u'NNS'), (u'-', u':'), (u'Bruins', u'NNP'), (u'vs', u'IN'), (u'Wild', u'NNP'), (u':', u':'), (u'Thursday', u'NNP'), (u'night', u'NN'), (u'is', u'VBZ'), (u'reserved', u'VBN'), (u'for', u'IN'), (u'hockey', u'NN'), (u'as', u'IN'), (u'we', u'PRP'), (u'are', u'VBP'), (u'taking', u'VBG'), (u'a', u'DT'), (u'good', u'JJ'), (u'rest', u'NN'), (u'from', u'IN'), (u'the', u'DT'), (u'...', u':'), (u'http://bit.ly/gw8oSb', u'URL')]
+Candidate:  [(u'NHL', u'NNP'), (u'Betting', u'NNP'), (u'Picks', u'NNP'), (u'-', u':'), (u'Bruins', u'NNP'), (u'vs', u'IN'), (u'Wild', u'NNP'), (u':', u':'), (u'Thursday', u'NNP'), (u'night', u'NN'), (u'is', u'VBZ'), (u'reserved', u'VBN'), (u'for', u'IN'), (u'hockey', u'NN'), (u'as', u'IN'), (u'we', u'PRP'), (u'are', u'VBP'), (u'taking', u'VBG'), (u'a', u'DT'), (u'good', u'JJ'), (u'rest', u'NN'), (u'from', u'IN'), (u'the', u'DT'), (u'...', u':'), (u'http://bit.ly/gw8oSb', u'URL')]
+For "Betting", expected  VBG  got  NNP
+For "Picks", expected  NNS  got  NNP
+--------------------
+Correct:    [(u'okay', u'UH'), (u'okay', u'UH'), (u',', u','), (u"'ll", u'MD'), (u'follow', u'VB'), (u'EVERYONE', u'NN'), (u'back', u'RB'), (u'today', u'NN'), (u'.', u'.'), (u':D', u'UH')]
+--------------------
+Correct:    [(u'We', u'PRP'), (u'should', u'MD'), (u'be', u'VB'), (u'launching', u'VBG'), (u'our', u'PRP$'), (u'first', u'JJ'), (u'street', u'NN'), (u'team', u'NN'), (u'promotion', u'NN'), (u'today', u'NN'), (u'.', u'.'), (u'Stay', u'VB'), (u'tuned', u'VBN'), (u'!', u'.'), (u'http://tinyurl.com/22kset2', u'URL')]
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@iloveheartstoo', u'USR'), (u':', u':'), (u'Please', u'VB'), (u'follow', u'VB'), (u'me', u'PRP'), (u'and', u'CC'), (u'RT', u'RT'), (u'for', u'IN'), (u'a', u'DT'), (u'chance', u'NN'), (u'to', u'TO'), (u'win', u'VB'), (u'.', u'.'), (u'Ends', u'VBZ'), (u'Tue', u'NNP'), (u'8', u'CD'), (u'Feb', u'NNP'), (u'8pm', u'CD'), (u'x', u'UH'), (u'http://ilovehearts.bigcartel.com/product/love-hear', u'URL'), (u'...', u':')]
+Candidate:  [(u'RT', u'RT'), (u'@iloveheartstoo', u'USR'), (u':', u':'), (u'Please', u'VB'), (u'follow', u'VB'), (u'me', u'PRP'), (u'and', u'CC'), (u'RT', u'RT'), (u'for', u'IN'), (u'a', u'DT'), (u'chance', u'NN'), (u'to', u'TO'), (u'win', u'NNP'), (u'.', u'.'), (u'Ends', u'NNS'), (u'Tue', u'NNP'), (u'8', u'CD'), (u'Feb', u'NNP'), (u'8pm', u'CD'), (u'x', u'UH'), (u'http://ilovehearts.bigcartel.com/product/love-hear', u'URL'), (u'...', u':')]
+For "win", expected  VB  got  NNP
+For "Ends", expected  VBZ  got  NNS
+--------------------
+Expected:   [(u'@ginamak', u'USR'), (u'I', u'PRP'), (u"'ve", u'VBP'), (u'had', u'VBN'), (u'what', u'WP'), (u'was', u'VBD'), (u'purportedly', u'RB'), (u'Chicago-style', u'JJ'), (u'thin', u'JJ'), (u'crust', u'NN'), (u'from', u'IN'), (u'a', u'DT'), (u'pizzeria', u'NN'), (u'in', u'IN'), (u'this', u'DT'), (u'area', u'NN'), (u'before', u'RB'), (u'.', u'.'), (u'It', u'PRP'), (u'was', u'VBD'), (u'very', u'RB'), (u'tasty', u'JJ'), (u',', u','), (u'but', u'CC'), (u'the', u'DT'), (u'...', u':')]
+Candidate:  [(u'@ginamak', u'USR'), (u'I', u'PRP'), (u"'ve", u'VBP'), (u'had', u'VBN'), (u'what', u'WP'), (u'was', u'VBD'), (u'purportedly', u'RB'), (u'Chicago-style', u'JJ'), (u'thin', u'JJ'), (u'crust', u'NN'), (u'from', u'IN'), (u'a', u'DT'), (u'pizzeria', u'NN'), (u'in', u'IN'), (u'this', u'DT'), (u'area', u'NN'), (u'before', u'IN'), (u'.', u'.'), (u'It', u'PRP'), (u'was', u'VBD'), (u'very', u'RB'), (u'tasty', u'JJ'), (u',', u','), (u'but', u'CC'), (u'the', u'DT'), (u'...', u':')]
+For "before", expected  RB  got  IN
+--------------------
+Expected:   [(u'@JoshRamsayArmy', u'USR'), (u'Kay', u'NNP'), (u'sorry', u'JJ'), (u'...', u':'), (u'Well', u'UH'), (u'my', u'PRP$'), (u'dad', u'NN'), (u'lest', u'VBP'), (u'when', u'WRB'), (u'i', u'PRP'), (u'was', u'VBD'), (u'3', u'CD'), (u'.', u'.'), (u'He', u'PRP'), (u'has', u'VBZ'), (u'issues', u'NNS'), (u'.', u'.'), (u'He', u'PRP'), (u'held', u'VBD'), (u'a', u'DT'), (u'knife', u'NN'), (u'at', u'IN'), (u'mom', u'NN'), (u'.', u'.'), (u'I', u'PRP'), (u'can', u'MD'), (u'STILL', u'RB'), (u'remember', u'VB'), (u'that', u'DT'), (u'...', u':'), (u'=/', u'UH')]
+Candidate:  [(u'@JoshRamsayArmy', u'USR'), (u'Kay', u'NNP'), (u'sorry', u'JJ'), (u'...', u':'), (u'Well', u'UH'), (u'my', u'PRP$'), (u'dad', u'NN'), (u'lest', u'IN'), (u'when', u'WRB'), (u'i', u'PRP'), (u'was', u'VBD'), (u'3', u'CD'), (u'.', u'.'), (u'He', u'PRP'), (u'has', u'VBZ'), (u'issues', u'NNS'), (u'.', u'.'), (u'He', u'PRP'), (u'held', u'VBD'), (u'a', u'DT'), (u'knife', u'NN'), (u'at', u'IN'), (u'mom', u'NN'), (u'.', u'.'), (u'I', u'PRP'), (u'can', u'MD'), (u'STILL', u'RB'), (u'remember', u'VB'), (u'that', u'IN'), (u'...', u':'), (u'=/', u'UH')]
+For "lest", expected  VBP  got  IN
+For "that", expected  DT  got  IN
+--------------------
+Correct:    [(u'There', u'EX'), (u'was', u'VBD'), (u'just', u'RB'), (u'a', u'DT'), (u'fire', u'NN'), (u'at', u'IN'), (u'work', u'NN'), (u'.', u'.'), (u'Today', u'NN'), (u'is', u'VBZ'), (u'looking', u'VBG'), (u'up', u'RP'), (u'.', u'.')]
+--------------------
+Expected:   [(u'The', u'DT'), (u'Basic', u'JJ'), (u'Step', u'NN'), (u'Before', u'RB'), (u'You', u'PRP'), (u'Even', u'RB'), (u'Start', u'VBP'), (u'Thinking', u'VBG'), (u'Of', u'IN'), (u'Making', u'VBG'), (u'Your', u'PRP$'), (u'...:', u':'), (u'Keyword', u'NN'), (u'research', u'NN'), (u'is', u'VBZ'), (u'a', u'DT'), (u'well', u'RB'), (u'known', u'JJ'), (u'subject', u'NN'), (u',', u','), (u'yet', u'CC'), (u'so', u'RB'), (u'...', u':'), (u'http://bit.ly/9XQgSr', u'URL')]
+Candidate:  [(u'The', u'DT'), (u'Basic', u'JJ'), (u'Step', u'NN'), (u'Before', u'IN'), (u'You', u'PRP'), (u'Even', u'RB'), (u'Start', u'VB'), (u'Thinking', u'VBG'), (u'Of', u'IN'), (u'Making', u'VBG'), (u'Your', u'PRP$'), (u'...:', u'NN'), (u'Keyword', u'NNP'), (u'research', u'NN'), (u'is', u'VBZ'), (u'a', u'DT'), (u'well', u'RB'), (u'known', u'VBN'), (u'subject', u'NN'), (u',', u','), (u'yet', u'RB'), (u'so', u'RB'), (u'...', u':'), (u'http://bit.ly/9XQgSr', u'URL')]
+For "Before", expected  RB  got  IN
+For "Start", expected  VBP  got  VB
+For "...:", expected  :  got  NN
+For "Keyword", expected  NN  got  NNP
+For "known", expected  JJ  got  VBN
+For "yet", expected  CC  got  RB
+--------------------
+Correct:    [(u'Photo', u'NN'), (u':', u':'), (u'SHE', u'PRP'), (u'GETS', u'VBZ'), (u'TIRED', u'JJ'), (u'AFTER', u'IN'), (u'SEX', u'NN'), (u'!', u'.'), (u'http://tumblr.com/xsu17j0ynx', u'URL')]
+--------------------
+Correct:    [(u'Nothing', u'NN'), (u'like', u'IN'), (u'getting', u'VBG'), (u'no', u'DT'), (u'sleep', u'NN'), (u'before', u'IN'), (u'a', u'DT'), (u'5', u'CD'), (u'hour', u'NN'), (u'trip', u'NN'), (u'..', u':'), (u'#wheee', u'HT')]
+--------------------
+Expected:   [(u'Good', u'JJ'), (u'start', u'NN'), (u'for', u'IN'), (u'sharks', u'NNP'), (u'tonight', u'NN'), (u'can', u'MD'), (u'only', u'RB'), (u'get', u'VB'), (u'better', u'JJR'), (u'.', u'.'), (u'Played', u'VBD'), (u'with', u'IN'), (u'short', u'JJ'), (u'bench', u'NN'), (u'tonight', u'NN'), (u'.', u'.'), (u'Thought', u'VBD'), (u'Rocks', u'NNP'), (u'well', u'RB'), (u'in', u'IN'), (u'game', u'NN'), (u'early', u'RB'), (u'though', u'IN'), (u'until', u'IN'), (u"'", u"''"), (u'unseen', u'NN'), (u"'", u"''")]
+Candidate:  [(u'Good', u'JJ'), (u'start', u'NN'), (u'for', u'IN'), (u'sharks', u'NNS'), (u'tonight', u'NN'), (u'can', u'MD'), (u'only', u'RB'), (u'get', u'VB'), (u'better', u'JJR'), (u'.', u'.'), (u'Played', u'VBN'), (u'with', u'IN'), (u'short', u'JJ'), (u'bench', u'NN'), (u'tonight', u'NN'), (u'.', u'.'), (u'Thought', u'VBD'), (u'Rocks', u'NNS'), (u'well', u'RB'), (u'in', u'IN'), (u'game', u'NN'), (u'early', u'RB'), (u'though', u'RB'), (u'until', u'IN'), (u"'", u"''"), (u'unseen', u'JJ'), (u"'", u"''")]
+For "sharks", expected  NNP  got  NNS
+For "Played", expected  VBD  got  VBN
+For "Rocks", expected  NNP  got  NNS
+For "though", expected  IN  got  RB
+For "unseen", expected  NN  got  JJ
+--------------------
+Expected:   [(u'@MrzEndy', u'USR'), (u'tru', u'UH'), (u'tru', u'UH'), (u'I', u'PRP'), (u"'m", u'VBP'), (u'leavin', u'VBG'), (u'again', u'RB'), (u'on', u'IN'), (u'Tuesday', u'NNP'), (u'yo', u'UH')]
+Candidate:  [(u'@MrzEndy', u'USR'), (u'tru', u'JJ'), (u'tru', u'JJ'), (u'I', u'PRP'), (u"'m", u'VBP'), (u'leavin', u'VBG'), (u'again', u'RB'), (u'on', u'IN'), (u'Tuesday', u'NNP'), (u'yo', u'UH')]
+For "tru", expected  UH  got  JJ
+For "tru", expected  UH  got  JJ
+--------------------
+Correct:    [(u'RT', u'RT'), (u'@BiebersFairies', u'USR'), (u':', u':'), (u'the', u'DT'), (u'day', u'NN'), (u'Justin', u'NNP'), (u'Bieber', u'NNP'), (u'was', u'VBD'), (u'born', u'VBN'), (u'was', u'VBD'), (u'a', u'DT'), (u'rainy', u'JJ'), (u'day', u'NN'), (u',', u','), (u'but', u'CC'), (u'it', u'PRP'), (u'was', u'VBD'), (u'no', u'DT'), (u'rain', u'NN'), (u',', u','), (u'NO', u'UH'), (u'!', u'.'), (u'the', u'DT'), (u'heaven', u'NN'), (u'was', u'VBD'), (u'crying', u'VBG'), (u'cause', u'IN'), (u'he', u'PRP'), (u'lost', u'VBD'), (u'his', u'PRP$'), (u'most', u'JJS'), (u'...', u':')]
+--------------------
+Correct:    [(u'RT', u'RT'), (u'@CHINOXL', u'USR'), (u':', u':'), (u'Today', u'NN'), (u'is', u'VBZ'), (u'my', u'PRP$'), (u'main', u'JJ'), (u'goonie', u'NN'), (u'@bobbyboutit', u'USR'), (u'birthday', u'NN'), (u'#teamchino', u'HT'), (u'ca', u'MD'), (u"n't", u'RB'), (u'move', u'VB'), (u'without', u'IN'), (u'him', u'PRP'), (u',', u','), (u'please', u'VB'), (u'send', u'VB'), (u'him', u'PRP'), (u'some', u'DT'), (u'shouts', u'NNS'), (u'!!', u'.'), (u'While', u'IN'), (u'he', u'PRP'), (u"'s", u'VBZ'), (u'...', u':')]
+--------------------
+Expected:   [(u'WIN', u'VB'), (u'FREE', u'JJ'), (u'PAMPERS', u'NNS'), (u'FOR', u'IN'), (u'A', u'DT'), (u'YEAR', u'NN'), (u'!!!', u'.'), (u'And', u'CC'), (u'more', u'JJ'), (u'...', u':'), (u'http://nblo.gs/80qJu', u'URL')]
+Candidate:  [(u'WIN', u'NNP'), (u'FREE', u'JJ'), (u'PAMPERS', u'NN'), (u'FOR', u'IN'), (u'A', u'DT'), (u'YEAR', u'NN'), (u'!!!', u'.'), (u'And', u'CC'), (u'more', u'JJR'), (u'...', u':'), (u'http://nblo.gs/80qJu', u'URL')]
+For "WIN", expected  VB  got  NNP
+For "PAMPERS", expected  NNS  got  NN
+For "more", expected  JJ  got  JJR
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@KyotoIS', u'USR'), (u':', u':'), (u'BEST', u'JJS'), (u'SATURDAY', u'NNP'), (u'PARTY', u'NN'), (u'IN', u'IN'), (u'KYOTO', u'NNP'), (u'!', u'.'), (u'BUTTERFLY', u'NNP'), (u'SATURDAYS', u'NNPS'), (u'@BUTTERFLYKYOTO', u'USR'), (u'@DJLEADJP', u'USR'), (u'@djshiotsu', u'USR'), (u'@DJYMX', u'USR'), (u'http://t.co/ifuwGCI', u'URL')]
+Candidate:  [(u'RT', u'RT'), (u'@KyotoIS', u'USR'), (u':', u':'), (u'BEST', u'JJ'), (u'SATURDAY', u'NNP'), (u'PARTY', u'NN'), (u'IN', u'IN'), (u'KYOTO', u'NNP'), (u'!', u'.'), (u'BUTTERFLY', u'NN'), (u'SATURDAYS', u'NNP'), (u'@BUTTERFLYKYOTO', u'USR'), (u'@DJLEADJP', u'USR'), (u'@djshiotsu', u'USR'), (u'@DJYMX', u'USR'), (u'http://t.co/ifuwGCI', u'URL')]
+For "BEST", expected  JJS  got  JJ
+For "BUTTERFLY", expected  NNP  got  NN
+For "SATURDAYS", expected  NNPS  got  NNP
+--------------------
+Expected:   [(u'Just', u'RB'), (u'got', u'VBD'), (u'home', u'NN'), (u'from', u'IN'), (u'school', u'NN'), (u'.', u'.'), (u':D', u'UH'), (u'it', u'PRP'), (u"'s", u'VBZ'), (u'friday', u'NN'), (u'guys', u'NNS'), (u'!,', u'.')]
+Candidate:  [(u'Just', u'RB'), (u'got', u'VBD'), (u'home', u'NN'), (u'from', u'IN'), (u'school', u'NN'), (u'.', u'.'), (u':D', u'UH'), (u'it', u'PRP'), (u"'s", u'VBZ'), (u'friday', u'NNP'), (u'guys', u'NNS'), (u'!,', u'.')]
+For "friday", expected  NN  got  NNP
+--------------------
+Expected:   [(u'I', u'PRP'), (u'want', u'VBP'), (u'it', u'PRP'), (u'NOW', u'RB'), (u'!', u'.'), (u';)', u'UH'), (u'RT', u'RT'), (u':', u':'), (u'@corsairartisan', u'USR'), (u'Pumpkin', u'NNP'), (u'Moonshine', u'NNP'), (u'has', u'VBZ'), (u'arrived', u'VBN'), (u'in', u'IN'), (u'Nashville', u'NNP'), (u'--', u':'), (u'Give', u'VB'), (u'it', u'PRP'), (u'a', u'DT'), (u'week', u'NN'), (u'to', u'TO'), (u'get', u'VB'), (u'it', u'PRP'), (u'in', u'IN'), (u'stores', u'NNS'), (u'.', u'.'), (u'KY', u'NNP'), (u'ships', u'VBZ'), (u'next', u'IN'), (u'week', u'NN'), (u'!', u'.')]
+Candidate:  [(u'I', u'PRP'), (u'want', u'VBP'), (u'it', u'PRP'), (u'NOW', u'RB'), (u'!', u'.'), (u';)', u'UH'), (u'RT', u'RT'), (u':', u':'), (u'@corsairartisan', u'USR'), (u'Pumpkin', u'NN'), (u'Moonshine', u'NNP'), (u'has', u'VBZ'), (u'arrived', u'VBN'), (u'in', u'IN'), (u'Nashville', u'NNP'), (u'--', u':'), (u'Give', u'VB'), (u'it', u'PRP'), (u'a', u'DT'), (u'week', u'NN'), (u'to', u'TO'), (u'get', u'VB'), (u'it', u'PRP'), (u'in', u'IN'), (u'stores', u'NNS'), (u'.', u'.'), (u'KY', u'NNP'), (u'ships', u'NNS'), (u'next', u'IN'), (u'week', u'NN'), (u'!', u'.')]
+For "Pumpkin", expected  NNP  got  NN
+For "ships", expected  VBZ  got  NNS
+--------------------
+Expected:   [(u'If', u'IN'), (u'you', u'PRP'), (u'are', u'VBP'), (u'staying', u'VBG'), (u'in', u'IN'), (u'Gainesville', u'NNP'), (u',', u','), (u'come', u'VB'), (u'check', u'VB'), (u'out', u'RP'), (u'Costa', u'NNP'), (u'Lounge', u'NNP'), (u'TONIGHT', u'NN'), (u'!', u'.'), (u'Say', u'VB'), (u'you', u'PRP'), (u'are', u'VBP'), (u'with', u'IN'), (u'salsa', u'NNP'), (u'caliente', u'NNP'), (u'and', u'CC'), (u'get', u'VB'), (u'in', u'IN'), (u'...', u':'), (u'http://fb.me/FZVzm8H9', u'URL')]
+Candidate:  [(u'If', u'IN'), (u'you', u'PRP'), (u'are', u'VBP'), (u'staying', u'VBG'), (u'in', u'IN'), (u'Gainesville', u'NNP'), (u',', u','), (u'come', u'VB'), (u'check', u'VB'), (u'out', u'RP'), (u'Costa', u'JJ'), (u'Lounge', u'NNP'), (u'TONIGHT', u'NN'), (u'!', u'.'), (u'Say', u'VB'), (u'you', u'PRP'), (u'are', u'VBP'), (u'with', u'IN'), (u'salsa', u'NN'), (u'caliente', u'NN'), (u'and', u'CC'), (u'get', u'VB'), (u'in', u'IN'), (u'...', u':'), (u'http://fb.me/FZVzm8H9', u'URL')]
+For "Costa", expected  NNP  got  JJ
+For "salsa", expected  NNP  got  NN
+For "caliente", expected  NNP  got  NN
+--------------------
+Expected:   [(u';', u':'), (u'I', u'PRP'), (u'can', u'MD'), (u'upgrade', u'VB'), (u'to', u'TO'), (u'a', u'DT'), (u'BlackBerry', u'NNP'), (u'in', u'IN'), (u'November', u'NNP'), (u'!!', u'.'), (u'Yesss', u'UH'), (u'.', u'.'), (u'&lt;', u'UH'), (u'3', u'UH'), (u'BB', u'NNP'), (u'Bold', u'NNP'), (u',', u','), (u'here', u'RB'), (u'I', u'PRP'), (u'come', u'VBP'), (u'!', u'.')]
+Candidate:  [(u';', u':'), (u'I', u'PRP'), (u'can', u'MD'), (u'upgrade', u'VB'), (u'to', u'TO'), (u'a', u'DT'), (u'BlackBerry', u'NNP'), (u'in', u'IN'), (u'November', u'NNP'), (u'!!', u'.'), (u'Yesss', u'UH'), (u'.', u'.'), (u'&lt;', u'VB'), (u'3', u'CD'), (u'BB', u'NN'), (u'Bold', u'JJ'), (u',', u','), (u'here', u'RB'), (u'I', u'PRP'), (u'come', u'VBP'), (u'!', u'.')]
+For "&lt;", expected  UH  got  VB
+For "3", expected  UH  got  CD
+For "BB", expected  NNP  got  NN
+For "Bold", expected  NNP  got  JJ
+--------------------
+Expected:   [(u'@isaccnewton7', u'USR'), (u'call', u'VB'), (u'me', u'PRP'), (u'when', u'WRB'), (u'u', u'PRP'), (u'go', u'VBP'), (u'out', u'RP'), (u'to', u'TO'), (u'practice', u'VB')]
+Candidate:  [(u'@isaccnewton7', u'USR'), (u'call', u'VB'), (u'me', u'PRP'), (u'when', u'WRB'), (u'u', u'PRP'), (u'go', u'VBP'), (u'out', u'RP'), (u'to', u'TO'), (u'practice', u'NN')]
+For "practice", expected  VB  got  NN
+--------------------
+Expected:   [(u'Do', u'VB'), (u"n't", u'RB'), (u'miss', u'VB'), (u'out', u'RP'), (u'on', u'IN'), (u'our', u'PRP$'), (u'Clearance', u'JJ'), (u'Blowout', u'JJ'), (u'Sale', u'NN'), (u'!', u'.'), (u'LAST', u'JJ'), (u'DAY', u'NN'), (u'for', u'IN'), (u'an', u'DT'), (u'additional', u'JJ'), (u'15%', u'NN'), (u'off', u'IN'), (u'on', u'IN'), (u'all', u'DT'), (u'clearance', u'NN'), (u'items', u'NNS'), (u'-', u':'), (u'Visit', u'VB'), (u'http://bit.ly/clr104', u'URL')]
+Candidate:  [(u'Do', u'VBP'), (u"n't", u'RB'), (u'miss', u'VB'), (u'out', u'RP'), (u'on', u'IN'), (u'our', u'PRP$'), (u'Clearance', u'NN'), (u'Blowout', u'NN'), (u'Sale', u'NN'), (u'!', u'.'), (u'LAST', u'JJ'), (u'DAY', u'NN'), (u'for', u'IN'), (u'an', u'DT'), (u'additional', u'JJ'), (u'15%', u'CD'), (u'off', u'IN'), (u'on', u'IN'), (u'all', u'DT'), (u'clearance', u'NN'), (u'items', u'NNS'), (u'-', u':'), (u'Visit', u'VB'), (u'http://bit.ly/clr104', u'URL')]
+For "Do", expected  VB  got  VBP
+For "Clearance", expected  JJ  got  NN
+For "Blowout", expected  JJ  got  NN
+For "15%", expected  NN  got  CD
+--------------------
+Expected:   [(u'@Foxy_Shoe_Thief', u'USR'), (u'*purrs', u'VBP'), (u'long', u'RB'), (u'on', u'IN'), (u'the', u'DT'), (u'inside', u'NN'), (u',', u','), (u'moving', u'VBG'), (u'stealthy', u'RB'), (u'like', u'VB'), (u'my', u'PRP$'), (u'pard', u'NN'), (u'taught', u'VBD'), (u'me', u'PRP'), (u'to', u'TO'), (u'do', u'VB'), (u'..', u':'), (u'ears', u'NNS'), (u'pulled', u'VBN'), (u'back', u'RB'), (u',', u','), (u'claws', u'NNS'), (u'out', u'IN'), (u'long*', u'JJ'), (u'@MicahPardKing', u'USR')]
+Candidate:  [(u'@Foxy_Shoe_Thief', u'USR'), (u'*purrs', u'VBZ'), (u'long', u'RB'), (u'on', u'IN'), (u'the', u'DT'), (u'inside', u'NN'), (u',', u','), (u'moving', u'VBG'), (u'stealthy', u'NN'), (u'like', u'IN'), (u'my', u'PRP$'), (u'pard', u'NN'), (u'taught', u'VBD'), (u'me', u'PRP'), (u'to', u'TO'), (u'do', u'VB'), (u'..', u':'), (u'ears', u'NNS'), (u'pulled', u'VBD'), (u'back', u'RB'), (u',', u','), (u'claws', u'NNS'), (u'out', u'IN'), (u'long*', u'JJ'), (u'@MicahPardKing', u'USR')]
+For "*purrs", expected  VBP  got  VBZ
+For "stealthy", expected  RB  got  NN
+For "like", expected  VB  got  IN
+For "pulled", expected  VBN  got  VBD
+--------------------
+Expected:   [(u'Tryna', u'VBG'), (u'Get', u'VB'), (u'Into', u'IN'), (u'Something', u'NN'), (u'Tonight', u'NN')]
+Candidate:  [(u'Tryna', u'NN'), (u'Get', u'VB'), (u'Into', u'IN'), (u'Something', u'NN'), (u'Tonight', u'NN')]
+For "Tryna", expected  VBG  got  NN
+--------------------
+Expected:   [(u'Peace', u'UH'), (u'green', u'JJ'), (u'tea', u'NN'), (u'time', u'NN'), (u'!!', u':'), (u'Happyzone', u'NNP'), (u'!!!!', u'.'), (u':)', u'UH'), (u'))))', u'UH')]
+Candidate:  [(u'Peace', u'NNP'), (u'green', u'JJ'), (u'tea', u'NN'), (u'time', u'NN'), (u'!!', u'.'), (u'Happyzone', u'UH'), (u'!!!!', u'.'), (u':)', u'UH'), (u'))))', u'UH')]
+For "Peace", expected  UH  got  NNP
+For "!!", expected  :  got  .
+For "Happyzone", expected  NNP  got  UH
+--------------------
+Expected:   [(u'HBCU', u'NNP'), (u"'s", u'PRP'), (u'should', u'MD'), (u'have', u'VB'), (u'a', u'DT'), (u'free', u'JJ'), (u'JORDAN', u'NNP'), (u'shoe', u'NN'), (u'lottery', u'NN'), (u'every', u'DT'), (u'Tuesday', u'NNP'), (u'but', u'CC'), (u'only', u'RB'), (u'at', u'IN'), (u'7pm', u'CD'), (u'.', u'.'), (u'Ninjas', u'NNS'), (u'would', u'MD'), (u'skip', u'VB'), (u'class', u'NN'), (u'for', u'IN'), (u'this', u'DT'), (u'shit', u'NN')]
+Candidate:  [(u'HBCU', u'NNP'), (u"'s", u'POS'), (u'should', u'MD'), (u'have', u'VB'), (u'a', u'DT'), (u'free', u'JJ'), (u'JORDAN', u'NNP'), (u'shoe', u'NN'), (u'lottery', u'NN'), (u'every', u'DT'), (u'Tuesday', u'NNP'), (u'but', u'CC'), (u'only', u'RB'), (u'at', u'IN'), (u'7pm', u'CD'), (u'.', u'.'), (u'Ninjas', u'NNP'), (u'would', u'MD'), (u'skip', u'VB'), (u'class', u'NN'), (u'for', u'IN'), (u'this', u'DT'), (u'shit', u'NN')]
+For "'s", expected  PRP  got  POS
+For "Ninjas", expected  NNS  got  NNP
+--------------------
+Expected:   [(u'NO', u'UH'), (u'Saints', u'NNP'), (u'R', u'VBP'), (u'.', u'.'), (u'Buch', u'NNP'), (u'might', u'MD'), (u'come', u'VB'), (u'back', u'RB'), (u'n', u'CC'), (u'play', u'VB'), (u'vs', u'IN'), (u'Seahawks', u'NNP'), (u'on', u'IN'), (u'Sunday', u'NNP'), (u'??', u'.')]
+Candidate:  [(u'NO', u'UH'), (u'Saints', u'NNP'), (u'R', u'NNP'), (u'.', u'.'), (u'Buch', u'NNP'), (u'might', u'MD'), (u'come', u'VB'), (u'back', u'RB'), (u'n', u'CC'), (u'play', u'VB'), (u'vs', u'IN'), (u'Seahawks', u'NNP'), (u'on', u'IN'), (u'Sunday', u'NNP'), (u'??', u'.')]
+For "R", expected  VBP  got  NNP
+--------------------
+Expected:   [(u'@_mistercory', u'USR'), (u'*Smiles', u'VB'), (u'up', u'IN'), (u'at', u'IN'), (u'him*', u'PRP'), (u'Can', u'MD'), (u'we', u'PRP'), (u'just', u'RB'), (u'...', u':'), (u'sit', u'VB'), (u'together', u'RB'), (u'for', u'IN'), (u'a', u'DT'), (u'while', u'NN'), (u'before', u'IN'), (u'round', u'NN'), (u'two', u'CD'), (u'?', u'.')]
+Candidate:  [(u'@_mistercory', u'USR'), (u'*Smiles', u'VBZ'), (u'up', u'RP'), (u'at', u'IN'), (u'him*', u'NN'), (u'Can', u'MD'), (u'we', u'PRP'), (u'just', u'RB'), (u'...', u':'), (u'sit', u'VB'), (u'together', u'RB'), (u'for', u'IN'), (u'a', u'DT'), (u'while', u'NN'), (u'before', u'IN'), (u'round', u'NN'), (u'two', u'CD'), (u'?', u'.')]
+For "*Smiles", expected  VB  got  VBZ
+For "up", expected  IN  got  RP
+For "him*", expected  PRP  got  NN
+--------------------
+Expected:   [(u'time', u'NN'), (u'to', u'TO'), (u'help', u'VB'), (u'our', u'PRP$'), (u'fellow', u'JJ'), (u'BELIEBER', u'NNP'), (u'shoutout', u'NN'), (u'for', u'IN'), (u'@rchristelyn.....@rchristeyn....@rchristelyn...she', u'USR'), (u"'s", u'VBZ'), (u'one', u'NN'), (u'of', u'IN'), (u'my', u'PRP$'), (u'bestfriends', u'NNS'), (u'on', u'IN'), (u'our', u'PRP$'), (u'school', u'NN')]
+Candidate:  [(u'time', u'NN'), (u'to', u'TO'), (u'help', u'VB'), (u'our', u'PRP$'), (u'fellow', u'JJ'), (u'BELIEBER', u'NN'), (u'shoutout', u'NN'), (u'for', u'IN'), (u'@rchristelyn.....@rchristeyn....@rchristelyn...she', u'USR'), (u"'s", u'POS'), (u'one', u'CD'), (u'of', u'IN'), (u'my', u'PRP$'), (u'bestfriends', u'NNS'), (u'on', u'IN'), (u'our', u'PRP$'), (u'school', u'NN')]
+For "BELIEBER", expected  NNP  got  NN
+For "'s", expected  VBZ  got  POS
+For "one", expected  NN  got  CD
+--------------------
+Expected:   [(u'good', u'JJ'), (u'friday', u'NNP'), (u'whatchu', u'PRP'), (u'got', u'VB'), (u'for', u'IN'), (u'me', u'PRP'), (u'@kanyewest', u'USR')]
+Candidate:  [(u'good', u'JJ'), (u'friday', u'NNP'), (u'whatchu', u'PRP'), (u'got', u'VBD'), (u'for', u'IN'), (u'me', u'PRP'), (u'@kanyewest', u'USR')]
+For "got", expected  VB  got  VBD
+--------------------
+Expected:   [(u'http://bit.ly/aTTQYq', u'URL'), (u'When', u'WRB'), (u'Pepsi', u'NNP'), (u'to', u'TO'), (u'ring', u'VB'), (u'usually', u'RB'), (u'confirm', u'VB'), (u'to', u'TO'), (u',', u','), (u'winning', u'VBG'), (u'a', u'DT'), (u'Nokia', u'NNP'), (u'5800', u'CD'), (u'?', u'.')]
+Candidate:  [(u'http://bit.ly/aTTQYq', u'URL'), (u'When', u'WRB'), (u'Pepsi', u'NNP'), (u'to', u'TO'), (u'ring', u'VB'), (u'usually', u'RB'), (u'confirm', u'VBP'), (u'to', u'TO'), (u',', u','), (u'winning', u'VBG'), (u'a', u'DT'), (u'Nokia', u'NNP'), (u'5800', u'CD'), (u'?', u'.')]
+For "confirm", expected  VB  got  VBP
+--------------------
+Expected:   [(u'RT', u'RT'), (u'@michael_schlact', u'USR'), (u':', u':'), (u'"', u"''"), (u'Nobody', u'NN'), (u'can', u'MD'), (u'go', u'VB'), (u'back', u'RB'), (u'and', u'CC'), (u'start', u'VB'), (u'a', u'DT'), (u'new', u'JJ'), (u'beginning', u'NN'), (u',', u','), (u'but', u'CC'), (u'anyone', u'NN'), (u'can', u'MD'), (u'start', u'VB'), (u'today', u'NN'), (u'and', u'CC'), (u'make', u'VB'), (u'a', u'DT'), (u'new', u'JJ'), (u'ending', u'NN'), (u'."', u':')]
+Candidate:  [(u'RT', u'RT'), (u'@michael_schlact', u'USR'), (u':', u':'), (u'"', u"''"), (u'Nobody', u'NN'), (u'can', u'MD'), (u'go', u'VB'), (u'back', u'RB'), (u'and', u'CC'), (u'start', u'VB'), (u'a', u'DT'), (u'new', u'JJ'), (u'beginning', u'NN'), (u',', u','), (u'but', u'CC'), (u'anyone', u'NN'), (u'can', u'MD'), (u'start', u'VB'), (u'today', u'NN'), (u'and', u'CC'), (u'make', u'VB'), (u'a', u'DT'), (u'new', u'JJ'), (u'ending', u'NN'), (u'."', u"''")]
+For "."", expected  :  got  ''
+--------------------
+Expected:   [(u'Yikes', u'UH'), (u'!', u'.'), (u'RT', u'RT'), (u'@mollyesque', u'USR'), (u':', u':'), (u'@cbellantoni', u'USR'), (u'Yes', u'UH'), (u'!', u'.'), (u'I', u'PRP'), (u'got', u'VBD'), (u'a', u'DT'), (u'"', u"''"), (u'fuck43', u'NN'), (u'"', u"''"), (u'bit', u'NN'), (u'.', u'.'), (u'ly', u'NN'), (u'on', u'IN'), (u'Friday', u'NNP'), (u'--', u':'), (u'veiled', u'JJ'), (u'anti-Bush', u'JJ'), (u'message', u'NN'), (u'?', u'.')]
+Candidate:  [(u'Yikes', u'UH'), (u'!', u'.'), (u'RT', u'RT'), (u'@mollyesque', u'USR'), (u':', u':'), (u'@cbellantoni', u'USR'), (u'Yes', u'UH'), (u'!', u'.'), (u'I', u'PRP'), (u'got', u'VBD'), (u'a', u'DT'), (u'"', u"''"), (u'fuck43', u'NN'), (u'"', u"''"), (u'bit', u'NN'), (u'.', u'.'), (u'ly', u'UH'), (u'on', u'IN'), (u'Friday', u'NNP'), (u'--', u':'), (u'veiled', u'VBD'), (u'anti-Bush', u'JJ'), (u'message', u'NN'), (u'?', u'.')]
+For "ly", expected  NN  got  UH
+For "veiled", expected  JJ  got  VBD
+--------------------
+Correct:    [(u'RT', u'RT'), (u'@FTFDband', u'USR'), (u'NEW', u'JJ'), (u'SONG', u'NN'), (u'COMING', u'VBG'), (u'THIS', u'DT'), (u'SUNDAY', u'NNP'), (u'!', u'.'), (u':D', u'UH')]
+--------------------
+Expected:   [(u'@pjames', u'USR'), (u'Add', u'VB'), (u'a', u'DT'), (u'little', u'JJ'), (u'Belanger', u'NNP'), (u',', u','), (u'and', u'CC'), (u'you', u'PRP'), (u"'ve", u'VBP'), (u'got', u'VBN'), (u'it', u'PRP'), (u'!', u'.'), (u'Of', u'IN'), (u'course', u'NN'), (u'...', u':'), (u'after', u'IN'), (u'his', u'PRP$'), (u'household', u'NN'), (u'items', u'NNS'), (u'arrive', u'VBP'), (u'from', u'IN'), (u'D', u'NNP'), (u'.', u'.'), (u'C', u'NNP'), (u'.', u'.')]
+Candidate:  [(u'@pjames', u'USR'), (u'Add', u'VB'), (u'a', u'DT'), (u'little', u'JJ'), (u'Belanger', u'NNP'), (u',', u','), (u'and', u'CC'), (u'you', u'PRP'), (u"'ve", u'VBP'), (u'got', u'VBN'), (u'it', u'PRP'), (u'!', u'.'), (u'Of', u'IN'), (u'course', u'NN'), (u'...', u':'), (u'after', u'IN'), (u'his', u'PRP$'), (u'household', u'NN'), (u'items', u'NNS'), (u'arrive', u'VBP'), (u'from', u'IN'), (u'D', u'NNP'), (u'.', u'.'), (u'C', u'NN'), (u'.', u'.')]
+For "C", expected  NNP  got  NN
+--------------------
+Expected:   [(u'Sorry', u'UH'), (u'but', u'CC'), (u'if', u'IN'), (u'my', u'PRP$'), (u'baby', u'NN'), (u'is', u'VBZ'), (u'gonna', u'VBG'), (u'sound', u'VB'), (u'that', u'RB'), (u'silly', u'JJ'), (u'when', u'WRB'), (u'reading', u'VBG'), (u'at', u'IN'), (u'age', u'NN'), (u'3', u'CD'), (u'then', u'IN'), (u"'ll", u'MD'), (u'take', u'VB'), (u'my', u'PRP$'), (u'chances', u'NNS'), (u'__AND__', u'CC'), (u'wait', u'VB'), (u'till', u'IN'), (u'they', u'PRP'), (u"'re", u'VBP'), (u'6', u'CD'), (u'.', u'.'), (u'#yourbabycanread', u'HT')]
+Candidate:  [(u'Sorry', u'JJ'), (u'but', u'CC'), (u'if', u'IN'), (u'my', u'PRP$'), (u'baby', u'NN'), (u'is', u'VBZ'), (u'gonna', u'VBG'), (u'sound', u'VB'), (u'that', u'DT'), (u'silly', u'JJ'), (u'when', u'WRB'), (u'reading', u'VBG'), (u'at', u'IN'), (u'age', u'NN'), (u'3', u'CD'), (u'then', u'RB'), (u"'ll", u'MD'), (u'take', u'VB'), (u'my', u'PRP$'), (u'chances', u'NNS'), (u'__AND__', u'MD'), (u'wait', u'VB'), (u'till', u'IN'), (u'they', u'PRP'), (u"'re", u'VBP'), (u'6', u'CD'), (u'.', u'.'), (u'#yourbabycanread', u'HT')]
+For "Sorry", expected  UH  got  JJ
+For "that", expected  RB  got  DT
+For "then", expected  IN  got  RB
+For "__AND__", expected  CC  got  MD
+--------------------
+Expected:   [(u'LOOP', u'NNP'), (u'PRODUCTION', u'NNP'), (u'PRESENT', u'VBZ'), (u'!!!', u'.'), (u'**ROCKSTAR**THURSDAY', u'SYM'), (u'7', u'CD'), (u'OCT', u'NNP'), (u'2010', u'CD'), (u'ONLY', u'RB'), (u'@', u'IN'), (u'EQUINOX', u'NNP'), (u'!!!!!!!', u'.'), (u'INFO', u'NN'), (u'08176595105', u'CD'), (u'http://yfrog.com/j7o94pj', u'URL'), (u'.', u'.')]
+Candidate:  [(u'LOOP', u'NN'), (u'PRODUCTION', u'NN'), (u'PRESENT', u'JJ'), (u'!!!', u'.'), (u'**ROCKSTAR**THURSDAY', u'SYM'), (u'7', u'CD'), (u'OCT', u'NNP'), (u'2010', u'CD'), (u'ONLY', u'RB'), (u'@', u'USR'), (u'EQUINOX', u'NNP'), (u'!!!!!!!', u'.'), (u'INFO', u'NN'), (u'08176595105', u'CD'), (u'http://yfrog.com/j7o94pj', u'URL'), (u'.', u'.')]
+For "LOOP", expected  NNP  got  NN
+For "PRODUCTION", expected  NNP  got  NN
+For "PRESENT", expected  VBZ  got  JJ
+For "@", expected  IN  got  USR
+--------------------
+Expected:   [(u'Dierks', u'NNP'), (u'Bentley', u'NNP'), (u'Admits', u'VBZ'), (u'He', u'PRP'), (u'Snuck', u'VBP'), (u'Into', u'IN'), (u'Grand', u'NNP'), (u'Ole', u'NNP'), (u'Opry', u'NNP'), (u'Before', u'IN'), (u'He', u'PRP'), (u'Made', u'VBD'), (u'It', u'PRP'), (u'Big', u'JJ'), (u':', u':'), (u'Just', u'RB'), (u'days', u'NNS'), (u'after', u'IN'), (u'join', u'NN'), (u'...', u':'), (u'http://bit.ly/9LJLHE', u'URL')]
+Candidate:  [(u'Dierks', u'NNP'), (u'Bentley', u'NNP'), (u'Admits', u'VBZ'), (u'He', u'PRP'), (u'Snuck', u'VBP'), (u'Into', u'IN'), (u'Grand', u'NNP'), (u'Ole', u'NNP'), (u'Opry', u'NNP'), (u'Before', u'IN'), (u'He', u'PRP'), (u'Made', u'VBD'), (u'It', u'PRP'), (u'Big', u'JJ'), (u':', u':'), (u'Just', u'RB'), (u'days', u'NNS'), (u'after', u'IN'), (u'join', u'VB'), (u'...', u':'), (u'http://bit.ly/9LJLHE', u'URL')]
+For "join", expected  NN  got  VB
+--------------------
+Expected:   [(u'hello', u'UH'), (u'and', u'CC'), (u'good', u'UH'), (u'evening', u'UH'), (u'.......', u':'), (u'hope', u'VBP'), (u'you', u'PRP'), (u'all', u'DT'), (u'had', u'VBD'), (u'a', u'DT'), (u'fab', u'JJ'), (u'day', u'NN'), (u'.', u'.'), (u'Ive', u'PRP'), (u'been', u'VBN'), (u'to', u'TO'), (u'the', u'DT'), (u'gym', u'NN'), (u'with', u'IN'), (u'@lazer558', u'USR'), (u'and', u'CC'), (u'had', u'VBD'), (u'a', u'DT'), (u'friend', u'NN'), (u'round', u'IN'), (u'.', u'.')]
+Candidate:  [(u'hello', u'UH'), (u'and', u'CC'), (u'good', u'JJ'), (u'evening', u'NN'), (u'.......', u':'), (u'hope', u'VBP'), (u'you', u'PRP'), (u'all', u'DT'), (u'had', u'VBD'), (u'a', u'DT'), (u'fab', u'JJ'), (u'day', u'NN'), (u'.', u'.'), (u'Ive', u'NNP'), (u'been', u'VBN'), (u'to', u'TO'), (u'the', u'DT'), (u'gym', u'NN'), (u'with', u'IN'), (u'@lazer558', u'USR'), (u'and', u'CC'), (u'had', u'VBD'), (u'a', u'DT'), (u'friend', u'NN'), (u'round', u'NN'), (u'.', u'.')]
+For "good", expected  UH  got  JJ
+For "evening", expected  UH  got  NN
+For "Ive", expected  PRP  got  NNP
+For "round", expected  IN  got  NN
+--------------------
+Correct:    [(u'I', u'PRP'), (u'typed', u'VBD'), (u'an', u'DT'), (u'essay', u'NN'), (u'and', u'CC'), (u'before', u'IN'), (u'I', u'PRP'), (u'saved', u'VBD'), (u'it', u'PRP'), (u'my', u'PRP$'), (u'lap', u'NN'), (u'top', u'NN'), (u'froze', u'VBD'), (u'and', u'CC'), (u'died', u'VBD'), (u'.', u'.'), (u'-___-', u'UH')]
+--------------------
+Expected:   [(u'Bestfriend', u'NN'), (u'wanna', u'VBP'), (u'go', u'VB'), (u'wit', u'IN'), (u'me', u'PRP'), (u'to', u'TO'), (u'get', u'VB'), (u'my', u'PRP$'), (u'nails', u'NNS'), (u'did', u'VBN'), (u'Saturday', u'NNP')]
+Candidate:  [(u'Bestfriend', u'NN'), (u'wanna', u'NN'), (u'go', u'VB'), (u'wit', u'IN'), (u'me', u'PRP'), (u'to', u'TO'), (u'get', u'VB'), (u'my', u'PRP$'), (u'nails', u'NNS'), (u'did', u'VBD'), (u'Saturday', u'NNP')]
+For "wanna", expected  VBP  got  NN
+For "did", expected  VBN  got  VBD
+--------------------
+Correct:    [(u'In', u'IN'), (u'bed', u'NN'), (u'watching', u'VBG'), (u'Day', u'NN'), (u'51', u'CD'), (u'HLs', u'NNP'), (u'.', u'.'), (u'(', u'('), (u'Awaiting', u'VBG'), (u'Marcus', u'NNP'), (u'Bentley', u'NNP'), (u'!', u'.'), (u')', u')'), (u'#BB11', u'HT')]
+--------------------
+Expected:   [(u'@yourjessica', u'USR'), (u"'ll", u'MD'), (u'do', u'VB'), (u'it', u'PRP'), (u'tomorrow', u'NN'), (u'.', u'.'), (u'Possibly', u'RB'), (u'.', u'.'), (u'Most', u'RBS'), (u'likely', u'RB'), (u'.', u'.'), (u'Hopefully', u'RB'), (u'.', u'.'), (u'Maybe', u'RB'), (u':)', u'UH')]
+Candidate:  [(u'@yourjessica', u'USR'), (u"'ll", u'MD'), (u'do', u'VB'), (u'it', u'PRP'), (u'tomorrow', u'NN'), (u'.', u'.'), (u'Possibly', u'RB'), (u'.', u'.'), (u'Most', u'JJS'), (u'likely', u'JJ'), (u'.', u'.'), (u'Hopefully', u'RB'), (u'.', u'.'), (u'Maybe', u'RB'), (u':)', u'UH')]
+For "Most", expected  RBS  got  JJS
+For "likely", expected  RB  got  JJ
+--------------------
+     |                                                                           N                   P                                                                             |
+     |                                                       J   J           N   N   N   P   P   P   R       R   R           S           U   U       V   V   V   V   V   W       W |
+     |   '                       C   C   D   E   H   I   J   J   J   M   N   N   P   N   D   O   R   P   R   B   B   R   R   Y   T   U   R   S   V   B   B   B   B   B   D   W   R |
+     |   '   (   )   ,   .   :   C   D   T   X   T   N   J   R   S   D   N   P   S   S   T   S   P   $   B   R   S   P   T   M   O   H   L   R   B   D   G   N   P   Z   T   P   B |
+-----+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+  '' | <13>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+   ( |   .  <4>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+   ) |   .   .  <5>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+   , |   .   .   . <50>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+   . |   .   .   .   2<127>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+   : |   1   .   .   .   4 <74>  .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   . |
+  CC |   .   .   .   .   .   . <42>  .   .   .   .   2   .   .   .   1   .   1   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+  CD |   .   .   .   .   .   .   . <36>  .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   . |
+  DT |   .   .   .   .   .   .   .   .<109>  .   .   3   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   2   .   . |
+  EX |   .   .   .   .   .   .   .   .   .  <2>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+  HT |   .   .   .   .   .   .   .   .   .   . <18>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+  IN |   1   .   .   .   .   .   .   .   .   .   .<162>  .   .   .   .   1   1   .   .   .   .   .   .   6   .   .   3   .   .   .   .   .   4   .   .   .   .   .   .   .   .   . |
+  JJ |   .   .   .   .   .   .   .   .   .   .   .   . <81>  1   .   .   4   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   2   1   .   3   .   .   .   .   . |
+ JJR |   .   .   .   .   .   .   .   .   .   .   .   .   .  <2>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+ JJS |   .   .   .   .   .   .   .   .   .   .   .   .   1   .  <4>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+  MD |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . <31>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+  NN |   .   .   .   .   .   .   .   2   .   .   .   1   8   .   .   .<262> 14   .   1   .   .   .   .   .   .   .   1   .   .   .   2   .   1   2   .   2   .   1   .   .   .   . |
+ NNP |   .   .   .   .   .   1   .   .   1   .   .   1   7   .   .   .  25<133>  1   3   .   .   1   1   .   .   .   .   .   .   .   2   .   .   4   .   1   .   .   .   .   .   . |
+NNPS |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   1  <.>  1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+ NNS |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   3   2   . <43>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   . |
+ PDT |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  <.>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+ POS |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  <5>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+ PRP |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   1   2   .   .   .   1<138>  4   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+PRP$ |   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   3 <44>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+  RB |   .   .   .   .   .   .   .   .   1   .   .   3   4   .   .   .   3   .   .   .   .   .   .   . <80>  .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   . |
+ RBR |   .   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .  <.>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+ RBS |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .  <1>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+  RP |   .   .   .   .   .   .   .   .   .   .   .   2   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . <12>  .   .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+  RT |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . <22>  .   .   .   .   .   .   .   .   .   .   .   .   .   . |
+ SYM |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  <1>  .   2   .   .   .   .   .   .   .   .   .   .   . |
+  TO |   .   .   .   .   .   .   .   4   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . <40>  .   .   .   .   .   .   .   .   .   .   .   . |
+  UH |   .   2   .   .   .   2   .   4   .   .   .   1   4   .   .   .   2   6   .   .   .   .   .   1   1   .   .   .   .   .   . <59>  .   .   2   2   .   .   .   .   .   .   . |
+ URL |   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   2   1   .   .   .   .   .   .   .   .   .   .   .   .   .   . <29>  .   .   .   .   .   .   .   .   .   . |
+ USR |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . <79>  .   .   .   .   .   .   .   .   . |
+  VB |   .   .   .   .   .   .   .   1   .   .   .   1   .   .   .   .   3   3   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .<100>  3   .   .   6   1   .   .   . |
+ VBD |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . <47>  .   2   .   2   .   .   . |
+ VBG |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   3   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . <41>  .   .   .   .   .   . |
+ VBN |   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   2   . <15>  .   .   .   .   . |
+ VBP |   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   2   2   .   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   4   .   .   . <57>  1   .   .   . |
+ VBZ |   .   .   .   .   .   .   .   .   .   .   .   .   1   .   .   .   .   1   .   5   .   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . <42>  .   .   . |
+ WDT |   .   .   .   .   .   .   .   .   1   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  <4>  .   . |
+  WP |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .  <4>  . |
+ WRB |   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   . <14>|
+-----+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+(row = reference; col = test)
+
+
+Token accuracy:  0.886948930598 2032 / 2291
+Sent. accuracy:  0.203389830508 24 / 118
