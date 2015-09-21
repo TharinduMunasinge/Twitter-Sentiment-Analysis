@@ -29,7 +29,7 @@ public class EmoticonStrength extends TokenStrength {
         Double value = data.get(emoticon);
         if (value == null) {
             value = 0.0;
-            System.out.println("Warning: unknown emoticon found: " + emoticon);
+            System.err.println("Warning: unknown emoticon found: " + emoticon);
             //TODO log alert?
         }
         return value;

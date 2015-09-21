@@ -1,9 +1,5 @@
 package score;
 
-import edu.stanford.nlp.util.StringUtils;
-
-import java.util.Arrays;
-
 /**
  * Created by bhash90 on 9/20/15.
  */
@@ -12,26 +8,33 @@ public class ScoreCalculator {
     private String tweet;
     private Word[] words;
 
-    public ScoreCalculator(String tweet) {
+    public ScoreCalculator(String tweet, Word[] words) {
         this.tweet = tweet;
-        words = generateWordList(tweet);
+        this.words = words;
     }
 
-    private double calculate() {
-        double adgScore = getAdverbGroupScore();
-        double vgScore = getVerbGroupScore();
-        double emoticonScore = getEmoticonsScore();
+    public Scores getScores() {
+        Scores scores = new Scores();
+        scores.adgScore = getAdverbGroupScore();
+        scores.vgScore = getVerbGroupScore();
+        scores.emoticonScore = getEmoticonsScore();
 
-        int emoticonsCount = getEmoticonsCount();
-        int repetitions = getRepitions();
-        int exclamations = getExclamations();
-        double fractionInCaps = getFractionInCaps();
-        int opinionGroupsCount = getOpinionGroupCount();
+        scores.emoticonsCount = getEmoticonsCount();
+        scores.repetitions = getRepitions();
+        scores.exclamations = getExclamations();
+        scores.fractionInCaps = getFractionInCaps();
+        scores.opinionGroupsCount = getOpinionGroupCount();
+        scores.emoticansAndGroupsCount = scores.opinionGroupsCount + scores.emoticonsCount;
 
-        int emoticansAndGroupsCount = opinionGroupsCount + emoticonsCount;
+        return scores;
+    }
 
-        double score = (1 + (fractionInCaps + Math.log(repetitions) + Math.log(exclamations)) / 3) * (adgScore + vgScore + emoticonScore);
-        return repetitions;
+    public double calculate() {
+        Scores scores = getScores();
+        double logReps = scores.repetitions > 0 ? Math.log(scores.repetitions) : 0;
+        double logExclams = scores.exclamations > 0 ? Math.log(scores.exclamations) : 0;
+        return (1 + (scores.fractionInCaps + logReps + logExclams) / 3) *
+                (scores.adgScore + scores.vgScore + scores.emoticonScore);
     }
 
     public double getFractionInCaps() {
@@ -87,7 +90,7 @@ public class ScoreCalculator {
 
     /*
     * Assumes a table with following order
-    * Word array index category(adjective/adverb,verb) Score
+    * Word array index category(adjective/adverb,verb) Scores
     *
     * extremely 7 adverb 0.7
     * impress 8 verb 0.5

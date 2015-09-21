@@ -103,7 +103,7 @@ public class WordStrength extends TokenStrength {
 
                 // Calculate weighted average. Weigh the synsets according to
                 // their rank.
-                // Score= 1/2*first + 1/3*second + 1/4*third ..... etc.
+                // Scores= 1/2*first + 1/3*second + 1/4*third ..... etc.
                 // Sum = 1/1 + 1/2 + 1/3 ...
                 double score = 0.0;
                 double sum = 0.0;
@@ -133,7 +133,7 @@ public class WordStrength extends TokenStrength {
         Double value = dictionary.get(term);
         if (value == null) {
             //TODO logging
-            System.out.println("Warning: Unknown term: " + term);
+            System.err.println("Warning: Unknown term: " + term);
             return 0;
         }
         return value;
