@@ -1,0 +1,80 @@
+<PMML version="4.2" xmlns="http://www.dmg.org/PMML-4_2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dmg.org/PMML-4_2 http://www.dmg.org/v4-2/pmml-4-2.xsd">
+ <Header copyright="Copyright (c) 2015 tharindu" description="Neural Network PMML Model">
+  <Extension name="user" value="tharindu" extender="Rattle/PMML"/>
+  <Application name="Rattle/PMML" version="1.4"/>
+  <Timestamp>2015-09-21 12:27:37</Timestamp>
+ </Header>
+ <DataDictionary numberOfFields="2">
+  <DataField name="Output" optype="continuous" dataType="double"/>
+  <DataField name="Input" optype="continuous" dataType="double"/>
+ </DataDictionary>
+ <NeuralNetwork modelName="NeuralNet_model" functionName="regression" numberOfLayers="2" activationFunction="logistic">
+  <MiningSchema>
+   <MiningField name="Output" usageType="predicted"/>
+   <MiningField name="Input" usageType="active"/>
+  </MiningSchema>
+  <Output>
+   <OutputField name="Predicted_Output" feature="predictedValue"/>
+  </Output>
+  <NeuralInputs numberOfInputs="1">
+   <NeuralInput id="1">
+    <DerivedField name="derivedNI_Input" optype="continuous" dataType="double">
+     <FieldRef field="Input"/>
+    </DerivedField>
+   </NeuralInput>
+  </NeuralInputs>
+  <NeuralLayer numberOfNeurons="10">
+   <Neuron id="2" bias="0.0138939761025252">
+    <Con from="1" weight="-1.11055425260116"/>
+   </Neuron>
+   <Neuron id="3" bias="0.677058323234097">
+    <Con from="1" weight="1.26236106349608"/>
+   </Neuron>
+   <Neuron id="4" bias="0.313523030530369">
+    <Con from="1" weight="5.21170219698859"/>
+   </Neuron>
+   <Neuron id="5" bias="-0.0338608112349109">
+    <Con from="1" weight="5.23301424683215"/>
+   </Neuron>
+   <Neuron id="6" bias="-1.98223663993134">
+    <Con from="1" weight="-61.1982472988195"/>
+   </Neuron>
+   <Neuron id="7" bias="-0.303055448735384">
+    <Con from="1" weight="-0.603413153355541"/>
+   </Neuron>
+   <Neuron id="8" bias="-0.382202402553634">
+    <Con from="1" weight="-0.621976234978845"/>
+   </Neuron>
+   <Neuron id="9" bias="0.563738110515715">
+    <Con from="1" weight="-0.538944547930044"/>
+   </Neuron>
+   <Neuron id="10" bias="-0.304456308132382">
+    <Con from="1" weight="-0.621925136383144"/>
+   </Neuron>
+   <Neuron id="11" bias="-1.13656166128501">
+    <Con from="1" weight="-6.77508512227955"/>
+   </Neuron>
+  </NeuralLayer>
+  <NeuralLayer numberOfNeurons="1">
+   <Neuron id="12" bias="117.982973993299">
+    <Con from="2" weight="0.0381255390599547"/>
+    <Con from="3" weight="118.83457381633"/>
+    <Con from="4" weight="117.9680047829"/>
+    <Con from="5" weight="115.745398356519"/>
+    <Con from="6" weight="5.24272759019608"/>
+    <Con from="7" weight="0.0230548997706364"/>
+    <Con from="8" weight="0.920353699102219"/>
+    <Con from="9" weight="0.210443145804858"/>
+    <Con from="10" weight="-0.0461022217917229"/>
+    <Con from="11" weight="0.643763312200475"/>
+   </Neuron>
+  </NeuralLayer>
+  <NeuralOutputs numberOfOutputs="1">
+   <NeuralOutput outputNeuron="12">
+    <DerivedField name="derivedNO_Output" optype="continuous" dataType="double">
+     <FieldRef field="Output"/>
+    </DerivedField>
+   </NeuralOutput>
+  </NeuralOutputs>
+ </NeuralNetwork>
+</PMML>
