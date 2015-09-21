@@ -192,11 +192,28 @@ public class Main {
                 List<Word> words = new ArrayList<Word>();
                 for (TaggedWord tagged : var23) {
                     double strength = getStrength(tagged);
-                    System.out.println(tagged.word() + ": " + tagged.tag() + ", " + strength);
-                    words.add(new Word(tagged.word(), tagged.tag(), strength));
+
+                    String tag = tagged.tag();
+                    Word.Category category;
+                    if (tag.startsWith("JJ")) {        // adjective
+                        category = Word.Category.ADJECTIVE;
+                    } else if (tag.startsWith("RB")) { // adverb
+                        category = Word.Category.ADVERB;
+                    } else if (tag.startsWith("NN")) { // noun
+                        category = Word.Category.NOUN;
+                    } else if (tag.startsWith("VB")) { // verb
+                        category = Word.Category.VERB;
+                    } else if (tag.equals("UH")) {     // emoticon
+                        category = Word.Category.EMOTICON;
+                    } else {
+                        category = Word.Category.OTHER;
+                    }
+
+                    System.out.println(tagged.word() + ": " + tag + ", " + strength);
+                    words.add(new Word(tagged.word(), category, strength));
                 }
                 double score = new ScoreCalculator(line, words.toArray(new Word[words.size()])).calculate();
-                System.out.println("Score: " + score + "\n");
+                System.out.println("\nText: " + line + "\nScore: " + score + "\n");
 
                 int var25;
                 for (var25 = 0; var25 < sentence_length; ++var25) {
@@ -248,7 +265,7 @@ public class Main {
         } else if (tag.startsWith("VB")) { // verb
             return wordStrength.extract(text, "v");
         } else if (tag.equals("UH")) {     // emoticon
-            return emoticonStrength.extract(text, null);
+            return emoticonStrength.extract(word.word(), null);
         }
 
         if (do_debug) {

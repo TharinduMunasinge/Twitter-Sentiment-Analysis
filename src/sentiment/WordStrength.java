@@ -133,7 +133,7 @@ public class WordStrength extends TokenStrength {
         Double value = dictionary.get(term);
         if (value == null) {
             //TODO logging
-            System.err.println("Warning: Unknown term: " + term);
+            System.err.println("Unknown term: " + term);
             return 0;
         }
         return value;

@@ -9,18 +9,30 @@ public class EmoticonStrength extends TokenStrength {
     public EmoticonStrength() {
         data = new HashMap<String, Double>();
         data.put(":D", 1.0);
+        data.put("=D", 1.0);
         data.put("BD", 1.0);
         data.put("XD", 1.0);
         data.put("\\m/", 1.0);
+
+        data.put(";)", 0.5);
         data.put(":)", 0.5);
+        data.put("(:", 0.5);
         data.put("=)", 0.5);
+        data.put("=]", 0.5);
         data.put(":-)", 0.5);
         data.put(":*", 0.5);
+
         data.put(":|", 0.0);
         data.put(":\\", 0.0);
+        data.put(":/", 0.0);
+        data.put("=/", 0.0);
+
         data.put(":(", -0.5);
+        data.put(":-(", -0.5);
+        data.put("=(", -0.5);
         data.put("</3", -0.5);
         data.put("B(", -0.5);
+
         data.put(":’(", -1.0);
         data.put("X-(", -1.0);
     }
@@ -29,7 +41,7 @@ public class EmoticonStrength extends TokenStrength {
         Double value = data.get(emoticon);
         if (value == null) {
             value = 0.0;
-            System.err.println("Warning: unknown emoticon found: " + emoticon);
+            System.err.println("Unknown emoticon found: " + emoticon);
             //TODO log alert?
         }
         return value;

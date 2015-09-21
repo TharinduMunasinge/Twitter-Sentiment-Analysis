@@ -5,27 +5,22 @@ package score;
  */
 public class Word {
 
-    enum Category {
-        ADJECTIVE("JJ"),
-        ADVERB("RB"),
-        VERB("VB"),
-        NOUN("NN"),
-        OTHER("");
-
-        String label;
-
-        Category(String label) {
-            this.label = label;
-        }
+    public enum Category {
+        ADJECTIVE,
+        ADVERB,
+        VERB,
+        NOUN,
+        EMOTICON,
+        OTHER;
     }
 
     private String word;
     private Category category;
     private double sentiScore;
 
-    public Word(String word, String category, double sentiScore) {
+    public Word(String word, Category category, double sentiScore) {
         try {
-            this.category = Category.valueOf(category);
+            this.category = category;
         } catch(RuntimeException e) {
             this.category = Category.OTHER;
         }

@@ -96,13 +96,12 @@ public class ScoreCalculator {
     * impress 8 verb 0.5
     */
     public double getAdverbGroupScore() {
-        Word[] tempWords = this.words.clone();
         double score = 0;
-        for (int i = 0; i < tempWords.length; i++) {
-            Word word = tempWords[i];
+        for (int i = 0; i < words.length; i++) {
+            Word word = words[i];
             if (word.getCategory().equals(Word.Category.ADVERB)) {
-                if ((i - 1) >= 0 && tempWords[i - 1].getCategory().equals(Word.Category.ADVERB)) {
-                    score += tempWords[i - 1].getSentiScore() * tempWords[i].getSentiScore();
+                if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
+                    score += words[i - 1].getSentiScore() * words[i].getSentiScore();
                 }
             }
         }
@@ -111,25 +110,24 @@ public class ScoreCalculator {
     }
 
     public double getVerbGroupScore() {
-        Word[] tempWords = this.words.clone();
         Double DEFAULT_WHEN_NOADVERB = 0.5;
         double score = 0;
-        for (int i = 0; i < tempWords.length; i++) {
-            Word word = tempWords[i];
+        for (int i = 0; i < words.length; i++) {
+            Word word = words[i];
             boolean noAdverb = true;
             if (word.getCategory().equals(Word.Category.VERB)) {
-                if ((i - 1) >= 0 && tempWords[i - 1].getCategory().equals(Word.Category.ADVERB)) {
-                    score += tempWords[i - 1].getSentiScore() * tempWords[i].getSentiScore();
+                if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
+                    score += words[i - 1].getSentiScore() * words[i].getSentiScore();
                     noAdverb = false;
                 }
 
-                if ((i + 1) <= tempWords.length && tempWords[i + 1].getCategory().equals(Word.Category.ADVERB)) {
-                    score += tempWords[i + 1].getSentiScore() * tempWords[i].getSentiScore();
+                if ((i + 1) < words.length && words[i + 1].getCategory().equals(Word.Category.ADVERB)) {
+                    score += words[i + 1].getSentiScore() * words[i].getSentiScore();
                     noAdverb = false;
                 }
 
                 if (noAdverb) {
-                    score += DEFAULT_WHEN_NOADVERB * tempWords[i].getSentiScore();
+                    score += DEFAULT_WHEN_NOADVERB * words[i].getSentiScore();
                 }
             }
         }
@@ -138,18 +136,17 @@ public class ScoreCalculator {
     }
 
     public int getOpinionGroupCount() {
-        Word[] tempWords = this.words.clone();
         int opinionGroups = 0;
-        for (int i = 0; i < tempWords.length; i++) {
-            Word word = tempWords[i];
+        for (int i = 0; i < words.length; i++) {
+            Word word = words[i];
             boolean noAdverb = true;
             if (word.getCategory().equals(Word.Category.VERB)) {
-                if ((i - 1) >= 0 && tempWords[i - 1].getCategory().equals(Word.Category.ADVERB)) {
+                if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
                     opinionGroups++;
                     noAdverb = false;
                 }
 
-                if ((i + 1) <= tempWords.length && tempWords[i + 1].getCategory().equals(Word.Category.ADVERB)) {
+                if ((i + 1) < words.length && words[i + 1].getCategory().equals(Word.Category.ADVERB)) {
                     opinionGroups++;
                 }
                 noAdverb = false;
@@ -160,7 +157,7 @@ public class ScoreCalculator {
             }
 
             if (word.getCategory().equals(Word.Category.ADVERB)) {
-                if ((i - 1) >= 0 && tempWords[i - 1].getCategory().equals(Word.Category.ADVERB)) {
+                if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
                     opinionGroups++;
                 }
             }
@@ -169,17 +166,23 @@ public class ScoreCalculator {
         return opinionGroups;
     }
 
-    private Word[] generateWordList(String tweet) {
-        return null;
-    }
-
     private int getEmoticonsCount() {
-// return the emoticons count
-        return 0;
+        int count = 0;
+        for (Word word : words) {
+            if (word.getCategory() == Word.Category.EMOTICON) {
+                count++;
+            }
+        }
+        return count;
     }
 
     private double getEmoticonsScore() {
-// return the emoticons count
-        return 0;
+        double score = 0.0;
+        for (Word word : words) {
+            if (word.getCategory() == Word.Category.EMOTICON) {
+                score += word.getSentiScore();
+            }
+        }
+        return score;
     }
 }
