@@ -15,16 +15,17 @@ public class ScoreCalculator {
 
     public Scores getScores() {
         Scores scores = new Scores();
-        scores.adgScore = getAdverbGroupScore();
-        scores.vgScore = getVerbGroupScore();
+        scores.adGScore = getAdverbGroupScore();
+        scores.adAjGScore = getAdverbAdjectiveGroupScore();
+        scores.vGScore = getVerbGroupScore();
         scores.emoticonScore = getEmoticonsScore();
 
         scores.emoticonsCount = getEmoticonsCount();
-        scores.repetitions = getRepitions();
+        scores.repetitions = getRepetitions();
         scores.exclamations = getExclamations();
         scores.fractionInCaps = getFractionInCaps();
         scores.opinionGroupsCount = getOpinionGroupCount();
-        scores.emoticansAndGroupsCount = scores.opinionGroupsCount + scores.emoticonsCount;
+        scores.emoticonsAndGroupsCount = scores.opinionGroupsCount + scores.emoticonsCount;
 
         return scores;
     }
@@ -34,7 +35,7 @@ public class ScoreCalculator {
         double logReps = scores.repetitions > 0 ? Math.log(scores.repetitions) : 0;
         double logExclams = scores.exclamations > 0 ? Math.log(scores.exclamations) : 0;
         return (1 + (scores.fractionInCaps + logReps + logExclams) / 3) *
-                (scores.adgScore + scores.vgScore + scores.emoticonScore);
+                (scores.adGScore + scores.adAjGScore + scores.vGScore + scores.emoticonScore);
     }
 
     public double getFractionInCaps() {
@@ -53,7 +54,7 @@ public class ScoreCalculator {
         return (double) (upperCount / length);
     }
 
-    public int getRepitions() {
+    public int getRepetitions() {
         String tempTweet = tweet;
         int tweetSize = tempTweet.length();
         int repCount = 0;
@@ -94,21 +95,32 @@ public class ScoreCalculator {
     *
     * extremely 7 adverb 0.7
     * impress 8 verb 0.5
+    *
+    * ADVERB ADVERB
     */
     public double getAdverbGroupScore() {
+        return getOrderedGroupScore(Word.Category.ADVERB, Word.Category.ADVERB);
+    }
+
+    /* ADVERB ADJECTIVE */
+    public double getAdverbAdjectiveGroupScore() {
+        return getOrderedGroupScore(Word.Category.ADVERB, Word.Category.ADJECTIVE);
+    }
+
+    private double getOrderedGroupScore(Word.Category first, Word.Category second) {
         double score = 0;
         for (int i = 0; i < words.length; i++) {
             Word word = words[i];
-            if (word.getCategory().equals(Word.Category.ADVERB)) {
-                if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
+            if (word.getCategory().equals(second)) {
+                if ((i - 1) >= 0 && words[i - 1].getCategory().equals(first)) {
                     score += words[i - 1].getSentiScore() * words[i].getSentiScore();
                 }
             }
         }
-
         return score;
     }
 
+    /* ADVERB VERB or VERB ADVERB */
     public double getVerbGroupScore() {
         Double DEFAULT_WHEN_NOADVERB = 0.5;
         double score = 0;
@@ -135,6 +147,7 @@ public class ScoreCalculator {
         return score;
     }
 
+    /* ADVERB VERB or VERB ADVERB */
     public int getOpinionGroupCount() {
         int opinionGroups = 0;
         for (int i = 0; i < words.length; i++) {
@@ -148,8 +161,8 @@ public class ScoreCalculator {
 
                 if ((i + 1) < words.length && words[i + 1].getCategory().equals(Word.Category.ADVERB)) {
                     opinionGroups++;
+                    noAdverb = false;
                 }
-                noAdverb = false;
             }
 
             if (noAdverb) {
