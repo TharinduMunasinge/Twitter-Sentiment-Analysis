@@ -28,6 +28,7 @@ import java.util.Map;
 
 public class WordStrength extends TokenStrength {
 
+    private static final String[] tags = {"a", "r", "v", "n"};
     private Map<String, Double> dictionary;
 
     public WordStrength(String pathToSWN) {
@@ -128,12 +129,23 @@ public class WordStrength extends TokenStrength {
         }
     }
 
-    public double extract(String word, String pos) {
-        String term = word + "#" + pos;
+    public double extract(String word, String posTag) {
+        String term = word + "#" + posTag;
         Double value = dictionary.get(term);
         if (value == null) {
-            //TODO logging
-            System.err.println("Unknown term: " + term);
+            System.err.println("Unknown term: " + term + ", attempting POS-insensitive search");
+            for (String tag : tags) {
+                if (tag.equals(posTag)) {
+                    continue;
+                }
+                term = word + "#" + tag;
+                value = dictionary.get(term);
+                if (value != null) {
+                    System.err.println("Returning alternative: " + term);
+                    return value;
+                }
+            }
+            System.err.println("No matches for " + word);
             return 0;
         }
         return value;

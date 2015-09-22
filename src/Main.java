@@ -1,14 +1,12 @@
 import edu.stanford.nlp.ling.TaggedWord;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 import score.ScoreCalculator;
+import score.Scores;
 import score.Word;
 import sentiment.EmoticonStrength;
 import sentiment.WordStrength;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -155,6 +153,9 @@ public class Main {
         int tokens_correct = 0;
         Pattern pattern = Pattern.compile("(.+)_([^_]+$)");
 
+        PrintWriter writer = new PrintWriter("dataset.csv");
+        writer.write(Scores.getHeader());
+
         String line;
         while ((line = var21.readLine()) != null) {
             line = line.trim();
@@ -212,8 +213,12 @@ public class Main {
                     System.out.println(tagged.word() + ": " + tag + ", " + strength);
                     words.add(new Word(tagged.word(), category, strength));
                 }
-                double score = new ScoreCalculator(line, words.toArray(new Word[words.size()])).calculate();
+                ScoreCalculator calc = new ScoreCalculator(line, words.toArray(new Word[words.size()]));
+                double score = calc.calculate();
                 System.out.println("\nText: " + line + "\nScore: " + score + "\n");
+
+                // write CSV
+                writer.write("\n" + calc.getScores().toString());
 
                 int var25;
                 for (var25 = 0; var25 < sentence_length; ++var25) {
