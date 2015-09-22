@@ -18,6 +18,7 @@ public class ScoreCalculator {
         scores.adGScore = getAdverbGroupScore();
         scores.adAjGScore = getAdverbAdjectiveGroupScore();
         scores.vGScore = getVerbGroupScore();
+        scores.adjNounGScore = getAdjectiveNounGroupScore();
         scores.emoticonScore = getEmoticonsScore();
 
         scores.emoticonsCount = getEmoticonsCount();
@@ -35,7 +36,7 @@ public class ScoreCalculator {
         double logReps = scores.repetitions > 0 ? Math.log(scores.repetitions) : 0;
         double logExclams = scores.exclamations > 0 ? Math.log(scores.exclamations) : 0;
         return ((1 + ((scores.fractionInCaps + logReps + logExclams) / 3))/scores.emoticonsAndGroupsCount) *
-                (scores.adGScore + scores.adAjGScore + scores.vGScore + scores.emoticonScore);
+                (scores.adGScore + scores.adAjGScore + scores.vGScore + scores.emoticonScore + scores.adjNounGScore);
     }
 
     public double getFractionInCaps() {
@@ -121,7 +122,7 @@ public class ScoreCalculator {
         return score;
     }
 
-   /* ADVERB VERB or VERB ADVERB */
+   /* ADJECTIVE ADVERB */
    public double getAdverbAdjectiveGroupScore() {
       Double DEFAULT_WHEN_NOADVERB = 0.5;
       double score = 0;
@@ -142,6 +143,26 @@ public class ScoreCalculator {
       return score;
    }
 
+   /* ADJECTIVE ADVERB */
+   public double getAdjectiveNounGroupScore() {
+      Double DEFAULT_WHEN_NOADVERB = 0.5;
+      double score = 0;
+      for (int i = 0; i < words.length; i++) {
+         Word word = words[i];
+         boolean noAdverb = true;
+         if (word.getCategory().equals(Word.Category.NOUN)) {
+            if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADJECTIVE)) {
+               score += words[i - 1].getSentiScore() * words[i].getSentiScore();
+               noAdverb = false;
+            }
+            if (noAdverb) {
+               score += DEFAULT_WHEN_NOADVERB * words[i].getSentiScore();
+            }
+         }
+      }
+
+      return score;
+   }
     /* ADVERB VERB or VERB ADVERB */
     public double getVerbGroupScore() {
         Double DEFAULT_WHEN_NOADVERB = 0.5;
@@ -196,6 +217,17 @@ public class ScoreCalculator {
                     opinionGroups++;
                 }
             }
+           if (word.getCategory().equals(Word.Category.ADJECTIVE)) {
+              if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
+                 opinionGroups++;
+              }
+           }
+
+           if (word.getCategory().equals(Word.Category.NOUN)) {
+              if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADJECTIVE)) {
+                 opinionGroups++;
+              }
+           }
         }
 
         return opinionGroups;

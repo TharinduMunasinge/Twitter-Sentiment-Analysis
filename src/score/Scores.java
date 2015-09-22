@@ -7,6 +7,7 @@ public class Scores {
     public double adGScore;
     public double adAjGScore;
     public double vGScore;
+    public double adjNounGScore;
     public double emoticonScore;
 
     public int emoticonsCount;
