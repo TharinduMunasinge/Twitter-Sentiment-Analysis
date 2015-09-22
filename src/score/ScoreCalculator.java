@@ -15,18 +15,20 @@ public class ScoreCalculator {
 
     public Scores getScores() {
         Scores scores = new Scores();
-        scores.adGScore = getAdverbGroupScore();
-        scores.adAjGScore = getAdverbAdjectiveGroupScore();
-        scores.vGScore = getVerbGroupScore();
         scores.adjNounGScore = getAdjectiveNounGroupScore();
+        scores.adverbGroupScore = getAdverbGroupScore();
+        scores.adverbAdjectiveGroupScore = getAdverbAdjectiveGroupScore();
+        scores.verbGroupScore = getVerbGroupScore();
         scores.emoticonScore = getEmoticonsScore();
 
-        scores.emoticonsCount = getEmoticonsCount();
         scores.repetitions = getRepetitions();
         scores.exclamations = getExclamations();
         scores.fractionInCaps = getFractionInCaps();
-        scores.opinionGroupsCount = getOpinionGroupCount();
-        scores.emoticonsAndGroupsCount = scores.opinionGroupsCount + scores.emoticonsCount;
+
+        scores.adverbGroupCount = getAdverbGroupCount();
+        scores.adverbAdjectiveGroupCount = getAdverbAdjectiveGroupCount();
+        scores.verbGroupCount = getVerbGroupCount();
+        scores.emoticonCount = getEmoticonsCount();
 
         return scores;
     }
@@ -35,8 +37,10 @@ public class ScoreCalculator {
         Scores scores = getScores();
         double logReps = scores.repetitions > 0 ? Math.log(scores.repetitions) : 0;
         double logExclams = scores.exclamations > 0 ? Math.log(scores.exclamations) : 0;
-        return ((1 + ((scores.fractionInCaps + logReps + logExclams) / 3))/scores.emoticonsAndGroupsCount) *
-                (scores.adGScore + scores.adAjGScore + scores.vGScore + scores.emoticonScore + scores.adjNounGScore);
+
+        return (1 + (scores.fractionInCaps + logReps + logExclams) / 3) *
+                (scores.adverbGroupScore + scores.adverbAdjectiveGroupScore + scores.verbGroupScore + scores.emoticonScore +scores.adjNounGScore) /
+                (scores.adverbGroupCount + scores.adverbAdjectiveGroupCount + scores.verbGroupCount + scores.emoticonCount);
     }
 
     public double getFractionInCaps() {
@@ -190,47 +194,62 @@ public class ScoreCalculator {
         return score;
     }
 
+    /* ADVERB ADVERB */
+    public int getAdverbGroupCount() {
+        return getOrderedGroupCount(Word.Category.ADVERB, Word.Category.ADVERB);
+    }
+
+   public int getNounGroupCount() {
+      return getOrderedGroupCount(Word.Category.ADJECTIVE, Word.Category.NOUN);
+   }
+
+    /* ADVERB ADJECTIVE */
+    public int getAdverbAdjectiveGroupCount() {
+        return getOrderedGroupCount(Word.Category.ADVERB, Word.Category.ADJECTIVE);
+    }
+
+    private int getOrderedGroupCount(Word.Category first, Word.Category second) {
+        int count = 0;
+        for (int i = 0; i < words.length; i++) {
+            Word word = words[i];
+            boolean noGroup = true;
+            if (word.getCategory().equals(second)) {
+                if ((i - 1) >= 0 && words[i - 1].getCategory().equals(first)) {
+                    count++;
+                    noGroup = false;
+                }
+            }
+            if(noGroup){
+               count++;
+            }
+        }
+        return count;
+    }
+
     /* ADVERB VERB or VERB ADVERB */
-    public int getOpinionGroupCount() {
-        int opinionGroups = 0;
+    public int getVerbGroupCount() {
+        int count = 0;
         for (int i = 0; i < words.length; i++) {
             Word word = words[i];
             boolean noAdverb = true;
             if (word.getCategory().equals(Word.Category.VERB)) {
                 if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
-                    opinionGroups++;
+                    count++;
                     noAdverb = false;
                 }
 
                 if ((i + 1) < words.length && words[i + 1].getCategory().equals(Word.Category.ADVERB)) {
-                    opinionGroups++;
+                    count++;
                     noAdverb = false;
                 }
             }
 
             if (noAdverb) {
-                opinionGroups++;
+                count++;
             }
-
-            if (word.getCategory().equals(Word.Category.ADVERB)) {
-                if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
-                    opinionGroups++;
-                }
-            }
-           if (word.getCategory().equals(Word.Category.ADJECTIVE)) {
-              if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
-                 opinionGroups++;
-              }
-           }
-
-           if (word.getCategory().equals(Word.Category.NOUN)) {
-              if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADJECTIVE)) {
-                 opinionGroups++;
-              }
-           }
         }
 
-        return opinionGroups;
+        return count;
     }
 
     private int getEmoticonsCount() {

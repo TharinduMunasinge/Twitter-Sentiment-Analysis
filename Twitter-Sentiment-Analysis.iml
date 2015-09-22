@@ -9,6 +9,10 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="stanford-postagger" level="project" />
+    <orderEntry type="library" name="jpmml-r-1.0.0" level="project" />
+    <orderEntry type="library" name="JRI" level="project" />
+    <orderEntry type="library" name="REngine" level="project" />
+    <orderEntry type="library" name="JRI (2)" level="project" />
   </component>
 </module>
 
