@@ -246,8 +246,9 @@ public class Main {
                 }
             }
         }
-
+        writer.close();
         var21.close();
+
         if (do_eval) {
             System.err.println("Sentences seen:    " + sentences_seen);
             System.err.println("Sentences correct: " + sentences_correct);
