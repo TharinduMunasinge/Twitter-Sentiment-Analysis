@@ -133,7 +133,9 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        validateArgs(args);
+
+        String para="train";
+      //  validateArgs(args);
 
         Map<String, String> corrections = loadCorrections();
         List<Pattern> interjections = loadInterjections();
@@ -145,15 +147,24 @@ public class Main {
         TwitterTagger tagger = new TwitterTagger(corrections, interjections, nes, do_correction, label_fixed,
                 do_interjections, do_nes, do_debug);
 
-        MaxentTagger var20 = new MaxentTagger(args[0]);
-        BufferedReader var21 = new BufferedReader(new InputStreamReader(new FileInputStream(args[1])));
+        MaxentTagger var20 = new MaxentTagger("resource/models/gate-EN-twitter-fast.model");
+        String inputFile="resource/corpora/train_data";
+        String outputFile="trainset_java_gen.csv";
+
+        if(para.equals("test")){
+            inputFile= "resource/corpora/test_data";
+            outputFile="testset_java_gen.csv";
+        }
+
+
+        BufferedReader var21 = new BufferedReader(new InputStreamReader(new FileInputStream(inputFile)));
         int var22 = 0;
         int sentences_seen = 0;
         int sentences_correct = 0;
         int tokens_correct = 0;
         Pattern pattern = Pattern.compile("(.+)_([^_]+$)");
-
-        PrintWriter writer = new PrintWriter("dataset.csv");
+        PrintWriter correct = new PrintWriter("correct.txt");
+        PrintWriter writer = new PrintWriter(outputFile);
         writer.write(Scores.getHeader());
 
         String line;
@@ -193,6 +204,9 @@ public class Main {
                 List<Word> words = new ArrayList<Word>();
                 for (TaggedWord tagged : var23) {
                     double strength = getStrength(tagged);
+
+
+                    correct.write(tagged.word()+" ");
 
                     String tag = tagged.tag();
                     Word.Category category;
@@ -244,6 +258,7 @@ public class Main {
                         ++sentences_correct;
                     }
                 }
+                correct.write("\n");
             }
         }
         writer.close();
@@ -261,6 +276,8 @@ public class Main {
         //lowercase, remove punctuations
         String text = word.word().toLowerCase().replaceAll("[^\\w]*", "");
         String tag = word.tag();
+
+
 
         if (tag.startsWith("JJ")) {        // adjective
             return wordStrength.extract(text, "a");
