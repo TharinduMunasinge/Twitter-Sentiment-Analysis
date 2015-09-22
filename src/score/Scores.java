@@ -4,9 +4,12 @@ package score;
  * Created by janaka on 9/21/15.
  */
 public class Scores {
+
+    public double adjNounGScore;
     public double adverbGroupScore;
     public double adverbAdjectiveGroupScore;
     public double verbGroupScore;
+
     public double emoticonScore;
 
     public int emoticonCount;

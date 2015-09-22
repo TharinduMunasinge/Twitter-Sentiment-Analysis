@@ -274,7 +274,10 @@ public class Main {
 
     private static double getStrength(TaggedWord word) {
         //lowercase, remove punctuations
-        String text = word.word().toLowerCase().replaceAll("[^\\w]*", "");
+
+        String lowerText = word.word().toLowerCase();
+        String dropS = lowerText.replaceAll("\\'s$" , "");
+        String text = dropS.replaceAll("[^\\w]*", "");
         String tag = word.tag();
 
 

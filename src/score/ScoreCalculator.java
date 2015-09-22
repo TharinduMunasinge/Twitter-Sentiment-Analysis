@@ -15,6 +15,7 @@ public class ScoreCalculator {
 
     public Scores getScores() {
         Scores scores = new Scores();
+        scores.adjNounGScore = getAdjectiveNounGroupScore();
         scores.adverbGroupScore = getAdverbGroupScore();
         scores.adverbAdjectiveGroupScore = getAdverbAdjectiveGroupScore();
         scores.verbGroupScore = getVerbGroupScore();
@@ -36,8 +37,9 @@ public class ScoreCalculator {
         Scores scores = getScores();
         double logReps = scores.repetitions > 0 ? Math.log(scores.repetitions) : 0;
         double logExclams = scores.exclamations > 0 ? Math.log(scores.exclamations) : 0;
+
         return (1 + (scores.fractionInCaps + logReps + logExclams) / 3) *
-                (scores.adverbGroupScore + scores.adverbAdjectiveGroupScore + scores.verbGroupScore + scores.emoticonScore) /
+                (scores.adverbGroupScore + scores.adverbAdjectiveGroupScore + scores.verbGroupScore + scores.emoticonScore +scores.adjNounGScore) /
                 (scores.adverbGroupCount + scores.adverbAdjectiveGroupCount + scores.verbGroupCount + scores.emoticonCount);
     }
 
@@ -105,10 +107,11 @@ public class ScoreCalculator {
         return getOrderedGroupScore(Word.Category.ADVERB, Word.Category.ADVERB);
     }
 
-    /* ADVERB ADJECTIVE */
+    /* ADVERB ADJECTIVE
     public double getAdverbAdjectiveGroupScore() {
         return getOrderedGroupScore(Word.Category.ADVERB, Word.Category.ADJECTIVE);
-    }
+    }*/
+
 
     private double getOrderedGroupScore(Word.Category first, Word.Category second) {
         double score = 0;
@@ -123,6 +126,47 @@ public class ScoreCalculator {
         return score;
     }
 
+   /* ADJECTIVE ADVERB */
+   public double getAdverbAdjectiveGroupScore() {
+      Double DEFAULT_WHEN_NOADVERB = 0.5;
+      double score = 0;
+      for (int i = 0; i < words.length; i++) {
+         Word word = words[i];
+         boolean noAdverb = true;
+         if (word.getCategory().equals(Word.Category.ADJECTIVE)) {
+            if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADVERB)) {
+               score += words[i - 1].getSentiScore() * words[i].getSentiScore();
+               noAdverb = false;
+            }
+            if (noAdverb) {
+               score += DEFAULT_WHEN_NOADVERB * words[i].getSentiScore();
+            }
+         }
+      }
+
+      return score;
+   }
+
+   /* ADJECTIVE ADVERB */
+   public double getAdjectiveNounGroupScore() {
+      Double DEFAULT_WHEN_NOADVERB = 0.5;
+      double score = 0;
+      for (int i = 0; i < words.length; i++) {
+         Word word = words[i];
+         boolean noAdverb = true;
+         if (word.getCategory().equals(Word.Category.NOUN)) {
+            if ((i - 1) >= 0 && words[i - 1].getCategory().equals(Word.Category.ADJECTIVE)) {
+               score += words[i - 1].getSentiScore() * words[i].getSentiScore();
+               noAdverb = false;
+            }
+            if (noAdverb) {
+               score += DEFAULT_WHEN_NOADVERB * words[i].getSentiScore();
+            }
+         }
+      }
+
+      return score;
+   }
     /* ADVERB VERB or VERB ADVERB */
     public double getVerbGroupScore() {
         Double DEFAULT_WHEN_NOADVERB = 0.5;
@@ -155,6 +199,10 @@ public class ScoreCalculator {
         return getOrderedGroupCount(Word.Category.ADVERB, Word.Category.ADVERB);
     }
 
+   public int getNounGroupCount() {
+      return getOrderedGroupCount(Word.Category.ADJECTIVE, Word.Category.NOUN);
+   }
+
     /* ADVERB ADJECTIVE */
     public int getAdverbAdjectiveGroupCount() {
         return getOrderedGroupCount(Word.Category.ADVERB, Word.Category.ADJECTIVE);
@@ -164,10 +212,15 @@ public class ScoreCalculator {
         int count = 0;
         for (int i = 0; i < words.length; i++) {
             Word word = words[i];
+            boolean noGroup = true;
             if (word.getCategory().equals(second)) {
                 if ((i - 1) >= 0 && words[i - 1].getCategory().equals(first)) {
                     count++;
+                    noGroup = false;
                 }
+            }
+            if(noGroup){
+               count++;
             }
         }
         return count;
